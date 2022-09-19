@@ -1,0 +1,34 @@
+
+
+.button {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    p {
+        font-size: 18px;
+        color: var(--bodyText);
+        padding-right: 10px;
+    }
+}
+
+.circle {
+    height: 29px;
+    width: 29px;
+    background-color: var(--primaryColor);
+    border-radius: 50%;
+}
+
+.arrow {
+    font-size: 26px;
+    font-weight: 100;
+    position: absolute;
+    left: -10px;
+    top: 2px;
+}
+
+.strelka {
+    position: relative;
+}

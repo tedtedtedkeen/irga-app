@@ -1,0 +1,20 @@
+
+
+.nav {
+    // padding-right: 52px;
+
+    ul {
+        display: flex;
+
+        flex-direction: row;
+
+        li {
+            font-size: 16px;
+            padding-right: 49px;
+        }
+    
+        li:nth-last-child(-n+1) {
+            padding-right: 0px;
+        }
+    }
+}

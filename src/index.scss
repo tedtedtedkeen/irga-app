@@ -1,0 +1,38 @@
+// @font-face {
+//     font-family: Gilroy;
+//     src: url();
+// }
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--bodyText);
+}
+
+button {
+    cursor: pointer;
+}
+
+:root {
+    --headText: #000;
+    --bodyText: #393939;
+    --grayText: #777777;
+    --primaryColor: #93B2AD;
+    --secondaryColor: #BCD5D1;
+}
+
+body {
+    width: 100%;
+    margin: 0px auto;
+    height: 200vh;
+}
