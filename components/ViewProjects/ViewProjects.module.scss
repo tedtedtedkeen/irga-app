@@ -1,0 +1,26 @@
+
+
+.head {
+    display: flex;
+    flex-direction: row;
+    padding: 0px 150px 0px 52px;
+    margin-bottom: 88px;
+
+    h2 {
+        font-size: 45px;
+        line-height: 150%;
+        padding-right: 160px;
+    }
+}
+
+.rightside {
+    display: flex;
+    padding-top: 127px;
+    gap: 100px;
+}
+
+.paragraph {
+    width: 272px;
+    line-height: 145%;
+    color: var(--bodyText);
+}
