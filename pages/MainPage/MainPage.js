@@ -2,7 +2,8 @@ import React from "react";
 import { Header } from "../../ui/DefaultHeader/Header";
 import { UseData } from "../../hooks/useData";
 import { MainProject } from "../../components/MainProject";
-import { About } from "../../ui/AboutUs/About";
+import { About } from "../../components/AboutUs/About";
+import { ViewProjects } from "../../components/ViewProjects";
 
 function MainPage() {
     return (
@@ -26,6 +27,16 @@ function MainPage() {
                 render={state => {
                     return (
                         <About 
+                            text={state[0]}
+                        />
+                    );
+                }}
+            />
+            <UseData 
+                col={"semiProjectsText"}
+                render={state => {
+                    return (
+                        <ViewProjects 
                             text={state[0]}
                         />
                     );

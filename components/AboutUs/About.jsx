@@ -1,6 +1,6 @@
 import React from 'react';
-import { More } from '../More';
-import { Table } from "../Table";
+import { More } from '../../ui/More';
+import { Table } from "../../ui/Table";
 import { UseData } from '../../hooks/useData';
 import styles from "./About.module.scss";
 

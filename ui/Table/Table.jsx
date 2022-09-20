@@ -4,9 +4,7 @@ import styles from "./Table.module.scss";
 const Table = ({ data }) => {
     
     return (
-        <div
-            // className={styles.table}
-        >
+        <div>
             <h2>
                 { data.firstNum }
             </h2>
