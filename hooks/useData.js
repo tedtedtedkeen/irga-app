@@ -20,11 +20,11 @@ const UseData = ({ col, render = f => f }) => {
   }, [])
 
   return (
-    <div>
+    <>
         {
             render(state)
         }
-    </div>
+    </>
   )
 }
 

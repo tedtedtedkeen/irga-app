@@ -2,36 +2,46 @@ import React from 'react';
 import { More } from '../More';
 import { Table } from "../Table";
 import { UseData } from '../../hooks/useData';
+import styles from "./About.module.scss";
 
 const About = ({ showMore, text }) => {
     return (
-        <div>
+        <div
+            className={styles.main}
+        >
             <div>
-                <h2>
+                <h2
+                    className={styles.title}
+                >
                     О нас
                 </h2>
             </div>
-            <div>
+            <div
+                className={styles.rightside}
+            >
                 <div>
-                    <p>
+                    <p
+                        className={styles.text}
+                    >
                         { text }
                     </p>
                     <More />
                 </div>
-                <div>
+                <div
+                    className={styles.tables}
+                >
                     <UseData 
-                    col={"aboutUs"}
-                    render={state => {
-                        console.log(state);
-                        return state.map((data) => {
-                            return (
-                                <Table 
-                                    key={data.id}
-                                    data={data}
-                                />
-                            );
-                        })
-                    }}
+                        col={"aboutUs"}
+                        render={state => {
+                            return state.map((data) => {
+                                return (
+                                    <Table
+                                        key={data.id}
+                                        data={data}
+                                    />
+                                );
+                            })
+                        }}
                     />
                 </div>
             </div>

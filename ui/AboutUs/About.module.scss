@@ -1,2 +1,64 @@
 
 
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 52px;
+}
+
+.title {
+    font-size: 45px;
+    line-height: 150%;
+    color: var(--headText);
+}
+
+.rightside {
+    display: flex;
+    flex-direction: row;
+    padding-top: 68px;
+    padding-right: 42px;
+}
+
+
+.tables {
+    display: flex;
+    flex-direction: row;
+
+    div {
+        background-color: var(--primaryColor);
+        flex: 1 0 305px;
+        margin-right: 28px;
+        min-height: 303px;
+        padding: 40px;
+        color: white;
+        
+        h2 {
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 145%;
+            margin-bottom: 4px;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 145%;
+            margin-bottom: 24px;
+        }
+
+        p:nth-last-child(-n+1) {
+            margin-bottom: 0px;
+        }
+    }
+
+    div:nth-last-child(-n+1) {
+        margin-right: 0px;
+    }
+}
+
+.text {
+    max-width: 300px;
+    margin-right: 84px;
+    margin-bottom: 30px;
+}
