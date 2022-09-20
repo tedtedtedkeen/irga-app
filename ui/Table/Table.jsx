@@ -1,18 +1,11 @@
 import React from 'react'
 
-const Table = ({ data, index }) => {
-
-    let dataObj;
-
-    if (index === 0) dataObj = data.first;
-    else dataObj = data.second;
-
-    console.log(index);
-
+const Table = ({ data }) => {
+    
     return (
         <div>
             <h2>
-                { dataObj.firstNum }
+                { data.firstNum }
             </h2>
         </div>
     )

@@ -11,18 +11,26 @@ function MainPage() {
             <UseData
                 col={"mainProjects"}
                 render={state => {
-                    console.log(state);
-                    return state.map(({first}, index) => {
+                    return state.map((item) => {
                         return (
                             <MainProject 
-                                key={index}
-                                data={first}
+                                key={item.id}
+                                data={item}
                             />
                         );
                     })
                 }}
             />
-            <About />
+            <UseData 
+                col={"oNas"}
+                render={state => {
+                    return (
+                        <About 
+                            text={state[0]}
+                        />
+                    );
+                }}
+            />
         </>
     );
 }

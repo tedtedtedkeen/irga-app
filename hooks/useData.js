@@ -8,15 +8,13 @@ const UseData = ({ col, render = f => f }) => {
 
   const [state, setState] = useState([]);
 
-  // const createArr = length => [...Array(length)];
-
   useEffect(() => {
     onValue(ref(db), (snapshot) => {
         const data = snapshot.val();
         const dataCategory = data[col];
-        console.log(dataCategory);
+        const dataArr = Object.values(dataCategory);
         if (data !== null) {
-            setState(oldAr => [...oldAr, dataCategory])
+            setState(dataArr);
         }
     })
   }, [])

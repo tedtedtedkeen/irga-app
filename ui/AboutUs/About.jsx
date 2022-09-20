@@ -3,7 +3,7 @@ import { More } from '../More';
 import { Table } from "../Table";
 import { UseData } from '../../hooks/useData';
 
-const About = ({ showMore }) => {
+const About = ({ showMore, text }) => {
     return (
         <div>
             <div>
@@ -14,7 +14,7 @@ const About = ({ showMore }) => {
             <div>
                 <div>
                     <p>
-
+                        { text }
                     </p>
                     <More />
                 </div>
@@ -23,12 +23,11 @@ const About = ({ showMore }) => {
                     col={"aboutUs"}
                     render={state => {
                         console.log(state);
-                        return state.map((data, index) => {
+                        return state.map((data) => {
                             return (
                                 <Table 
-                                    key={index}
+                                    key={data.id}
                                     data={data}
-                                    index={index}
                                 />
                             );
                         })
