@@ -23,7 +23,7 @@ const ViewProjects = ({ text }) => {
                         <p
                             className={styles.paragraph}
                         >
-                            { text }
+                            {text}
                         </p>
                     </div>
                     <ProjectsNav />
@@ -32,23 +32,24 @@ const ViewProjects = ({ text }) => {
             <div
                 className={styles.sideProjects}
             >
-                <UseData 
+                {/* <UseData
                     col={"semiProjects"}
                     render={state => {
                         return state.map(item => {
+                            console.log(item);
                             if (item.id === 3 || item.id === 4) {
                                 return (
-                                    <BigProject 
+                                    <BigProject
                                         data={item}
                                         key={item.id}
                                     />
                                 );
                             } else {
                                 return (
-                                    item.id === 2 
+                                    (item.id === 2)     
                                         ? <LilProject
-                                            pad={true}
                                             data={item}
+                                            pad={true}
                                             key={item.id}
                                         />
                                         : <LilProject
@@ -59,6 +60,37 @@ const ViewProjects = ({ text }) => {
                             }
                         })
                     }}
+                /> */}
+                <UseData
+                    col={"semiOneProjects"}
+                    render={state => state.map(item => {
+                        return item.id === 3
+                            ? <BigProject 
+                                data={item}
+                                key={item.id}
+                            />
+                            : <LilProject 
+                                data={item}
+                                key={item.id}
+                            />
+                    })}
+                />
+                <div
+                    style={{ height: 100, width: 1000 }}
+                ></div>
+                <UseData
+                    col={"semiTwoProjects"}
+                    render={state => state.map(item => {
+                        return item.id === 4
+                            ? <BigProject 
+                                data={item}
+                                key={item.id}
+                            />
+                            : <LilProject 
+                                data={item}
+                                key={item.id}
+                            />
+                    })}
                 />
             </div>
         </>
