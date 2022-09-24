@@ -1,0 +1,40 @@
+
+
+.main {
+
+    margin: 0px 84px 114px 52px;
+
+    h2 {
+        font-size: 45px;
+        line-height: 150%;
+        font-weight: 400;
+        color: var(--headText);
+        margin-bottom: 62px;
+    }
+}
+
+.textContainer {
+    padding: 72px 193px 132px 124px;
+    p {
+        margin-bottom: 12px;
+        font-size: 20px;
+        line-height: 145%;
+        font-weight: 400;
+        min-width: 209px;
+        color: var(--bodyText);
+    }
+    p:nth-last-child(-n+1) {
+        margin-bottom: 0px;
+    } 
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.square {
+    background-color: gray;
+    height: 414px;
+    width: 100%;
+}

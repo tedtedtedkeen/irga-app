@@ -13,13 +13,11 @@ function MainProject({ data }) {
             <div
                 className={styles.left}
             >
-                <div
+                <h1
                     className={styles.title}
                 >
-                    <h1>
-                        {data.title}
-                    </h1>
-                </div>
+                    {data.title}
+                </h1>
                 <div
                     className={styles.bottom}
                 >

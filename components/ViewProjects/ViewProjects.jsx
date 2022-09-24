@@ -32,35 +32,6 @@ const ViewProjects = ({ text }) => {
             <div
                 className={styles.sideProjects}
             >
-                {/* <UseData
-                    col={"semiProjects"}
-                    render={state => {
-                        return state.map(item => {
-                            console.log(item);
-                            if (item.id === 3 || item.id === 4) {
-                                return (
-                                    <BigProject
-                                        data={item}
-                                        key={item.id}
-                                    />
-                                );
-                            } else {
-                                return (
-                                    (item.id === 2)     
-                                        ? <LilProject
-                                            data={item}
-                                            pad={true}
-                                            key={item.id}
-                                        />
-                                        : <LilProject
-                                            data={item}
-                                            key={item.id}
-                                        />
-                                );
-                            }
-                        })
-                    }}
-                /> */}
                 <UseData
                     col={"semiOneProjects"}
                     render={state => state.map(item => {
