@@ -22,6 +22,7 @@ function Contacts() {
                         render={state => state.map(item => {
                             return <p
                                 className={styles.text}
+                                key={item.id}
                             >
                                 { item.text }
                             </p>

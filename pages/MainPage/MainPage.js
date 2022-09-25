@@ -5,6 +5,7 @@ import { MainProject } from "../../components/MainProject";
 import { About } from "../../components/AboutUs/About";
 import { ViewProjects } from "../../components/ViewProjects";
 import { Contacts } from "../../components/Contacts";
+import { Footer } from "../../ui/Footer";
 
 function MainPage() {
     return (
@@ -44,6 +45,7 @@ function MainPage() {
                 }}
             />
             <Contacts />
+            <Footer />
         </>
     );
 }
