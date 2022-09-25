@@ -4,7 +4,7 @@ import { Table } from "../../ui/Table";
 import { UseData } from '../../hooks/useData';
 import styles from "./About.module.scss";
 
-const About = ({ showMore, text }) => {
+const About = ({ showMore = false, text }) => {
     return (
         <div
             className={styles.main}
@@ -25,7 +25,7 @@ const About = ({ showMore, text }) => {
                     >
                         { text }
                     </p>
-                    <More />
+                    {showMore && <More />}
                 </div>
                 <div
                     className={styles.tables}

@@ -1,11 +1,14 @@
 import React from "react";
 import { Header } from "../../ui/DefaultHeader/Header";
+import { CompanyAbout } from "../../components/CompanyAbout";
 
 function AboutUs() {
     return (
         <div>
-            <Header />
-            I'm about us
+            <Header 
+                pad={true}
+            />
+            <CompanyAbout />
         </div>
     );
 }

@@ -1,0 +1,1 @@
+export { BigSubtitle } from "./BigSubtitle";

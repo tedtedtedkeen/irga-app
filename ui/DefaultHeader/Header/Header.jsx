@@ -4,11 +4,10 @@ import styles from "./Header.module.scss";
 import irgaLogo from "../../../public/images/irga-logo.png";
 import irgaLogoX2 from "../../../public/images/irga-logo-x2.png";
 
-
-function Header() {
+function Header({ pad = false }) {
     return (
         <header
-            className={styles.header}
+            className={pad ? styles.padHeader : styles.header}
         >
             <img
                 src={irgaLogoX2}

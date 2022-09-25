@@ -9,7 +9,7 @@ function Contacts() {
             className={styles.main}
         >
             <h2>
-                Contacts
+                Контакты
             </h2>
             <div
                 className={styles.container}

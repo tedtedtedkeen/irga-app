@@ -30,6 +30,7 @@ function MainPage() {
                     return (
                         <About 
                             text={state[0]}
+                            showMore={true}
                         />
                     );
                 }}
