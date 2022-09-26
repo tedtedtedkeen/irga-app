@@ -51,7 +51,9 @@ function CompanyAbout() {
                     className={styles.bigImage}
                 />
             </div>
-            <div>
+            <div
+                className={styles.lastContainer}
+            >
                 <h2
                     className={styles.secondTitle}
                 >
@@ -61,9 +63,6 @@ function CompanyAbout() {
                     data={dataText[3]}
                     centered={true}
                 />
-                <div
-                    className={styles.test}
-                ></div>
             </div>
         </>
     );
