@@ -1,7 +1,7 @@
 import React from 'react';
 import { More } from '../../ui/More';
 import { Table } from "../../ui/Table";
-import { UseData } from '../../hooks/useData';
+import { useData } from '../../hooks/useData';
 import styles from "./About.module.scss";
 
 const About = ({ showMore = false, text }) => {
@@ -30,19 +30,21 @@ const About = ({ showMore = false, text }) => {
                 <div
                     className={styles.tables}
                 >
-                    <UseData 
-                        col={"aboutUs"}
-                        render={state => {
-                            return state.map((data) => {
-                                return (
-                                    <Table
-                                        key={data.id}
-                                        data={data}
-                                    />
-                                );
-                            })
-                        }}
-                    />
+                   {
+                        useData(
+                            "aboutUs",
+                            state => {
+                                return state.map((data) => {
+                                    return (
+                                        <Table
+                                            key={data.id}
+                                            data={data}
+                                        />
+                                    )
+                                })
+                            }
+                        )
+                    }
                 </div>
             </div>
         </div>

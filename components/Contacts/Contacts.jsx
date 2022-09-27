@@ -1,5 +1,5 @@
 import React from "react";
-import { UseData } from "../../hooks/useData";
+import { useData } from "../../hooks/useData";
 import styles from "./Contacts.module.scss";
 
 function Contacts() {
@@ -17,17 +17,18 @@ function Contacts() {
                 <div
                     className={styles.textContainer}
                 >
-                    <UseData 
-                        col={"contactsText"}
-                        render={state => state.map(item => {
-                            return <p
-                                className={styles.text}
-                                key={item.id}
-                            >
-                                { item.text }
-                            </p>
-                        })}
-                    />
+                    {  
+                        useData( 
+                            "contactsText",
+                            state => state.map(item => {
+                                return <p
+                                    className={styles.text}
+                                    key={item.id}
+                                >
+                                    { item.text }
+                                </p>
+                        }))
+                    }
                 </div>
                 <div
                     className={styles.square}

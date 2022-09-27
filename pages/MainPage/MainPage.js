@@ -1,6 +1,6 @@
 import React from "react";
 import { Header } from "../../ui/DefaultHeader/Header";
-import { UseData } from "../../hooks/useData";
+import { useData } from "../../hooks/useData";
 import { MainProject } from "../../components/MainProject";
 import { About } from "../../components/AboutUs/About";
 import { ViewProjects } from "../../components/ViewProjects";
@@ -11,40 +11,43 @@ function MainPage() {
     return (
         <>
             <Header />
-            <UseData
-                col={"mainProjects"}
-                render={state => {
-                    return state.map((item) => {
+            {
+                useData(
+                    "mainProjects",
+                    state => {
+                        return state.map((item) => {
+                            return (
+                                <MainProject 
+                                    key={item.id}
+                                    data={item}
+                                />
+                            );
+                        })
+                })
+            }
+            {
+                useData( 
+                    "oNas",
+                    state => {
                         return (
-                            <MainProject 
-                                key={item.id}
-                                data={item}
+                            <About 
+                                text={state[0]}
+                                showMore={true}
                             />
                         );
-                    })
-                }}
-            />
-            <UseData 
-                col={"oNas"}
-                render={state => {
-                    return (
-                        <About 
-                            text={state[0]}
-                            showMore={true}
-                        />
-                    );
-                }}
-            />
-            <UseData 
-                col={"semiProjectsText"}
-                render={state => {
-                    return (
-                        <ViewProjects 
-                            text={state[0]}
-                        />
-                    );
-                }}
-            />
+                })
+            }
+            {
+                useData( 
+                    "semiProjectsText",
+                    state => {
+                        return (
+                            <ViewProjects 
+                                text={state[0]}
+                            />
+                        );
+                })
+            }
             <Contacts />
             <Footer />
         </>

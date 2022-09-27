@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./CompanyAbout.module.scss";
-import { UseData } from "../../hooks/useData";
+import { useData } from "../../hooks/useData";
 import { About } from "../../components/AboutUs";
 import { BigSubtitle } from "../../ui/BigSubtitle";
 import dataText from "../../data/subtitles-data.json";
@@ -9,16 +9,18 @@ import bigImage from "../../public/images/image-bristol.png";
 function CompanyAbout() {
     return (
         <>
-            <UseData 
-                col={"oNas"}
-                render={state => {
-                    return (
-                        <About 
-                            text={state[0]}
-                        />
-                    );
-                }}
-            />
+            {
+                useData(
+                    "oNas",
+                    state => {
+                        return (
+                            <About 
+                                text={state[0]}
+                            />
+                        );
+                    }
+                )
+            }
             <div
                 className={styles.firstContainer}
             >
