@@ -1,0 +1,18 @@
+
+
+.nav {
+
+  li {
+    font-size: 50px;
+    margin-bottom: 32px;
+    font-weight: 400;
+    
+    a {
+      color: #fff;
+    }
+  }
+
+  li:nth-last-child(-n+1) {
+    margin-bottom: 0px;
+  }
+}

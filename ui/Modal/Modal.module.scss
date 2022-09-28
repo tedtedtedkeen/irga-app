@@ -1,0 +1,36 @@
+
+
+.main {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  top: 0;
+  left: 0;
+  background-color: var(--primaryColor);
+
+  button {
+    background-color: var(--primaryColor);
+    font-size: 45px;
+    color: #fff;
+    position: absolute;
+    top: 60px;
+    right: 62px;
+  }
+
+  img {
+    max-width: 480px;
+    height: 458px;
+    margin-left: 68px;
+    margin-right: 168px;
+  }
+
+  p {
+    font-size: 36px;
+    color: #fff;
+    line-height: 145%;
+    padding-top: 69px;
+  }
+}

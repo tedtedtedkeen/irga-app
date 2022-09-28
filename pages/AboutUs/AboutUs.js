@@ -3,6 +3,7 @@ import { Header } from "../../ui/DefaultHeader/Header";
 import { CompanyAbout } from "../../components/CompanyAbout";
 import { ServicesList } from "../../components/ServicesList";
 import { Footer } from "../../ui/Footer";
+import { Partners } from "../../components/Partners";
 
 function AboutUs() {
     return (
@@ -12,6 +13,7 @@ function AboutUs() {
             />
             <CompanyAbout />
             <ServicesList />
+            <Partners />
             <Footer />
         </div>
     );
