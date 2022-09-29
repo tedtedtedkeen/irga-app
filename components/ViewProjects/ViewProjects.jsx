@@ -5,7 +5,7 @@ import { useData } from "../../hooks/useData";
 import { BigProject } from "../../ui/BigProject";
 import { LilProject } from "../../ui/LilProject";
 
-const ViewProjects = ({ text }) => {
+const ViewProjects = ({ text, nav = true }) => {
     return (
         <>
             <div
@@ -26,7 +26,7 @@ const ViewProjects = ({ text }) => {
                             {text}
                         </p>
                     </div>
-                    <ProjectsNav />
+                    {nav && <ProjectsNav />}
                 </div>
             </div>
             <div

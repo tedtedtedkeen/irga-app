@@ -4,6 +4,7 @@ import { CompanyAbout } from "../../components/CompanyAbout";
 import { ServicesList } from "../../components/ServicesList";
 import { Footer } from "../../ui/Footer";
 import { Partners } from "../../components/Partners";
+import { WorkersList } from "../../components/WorkersList";
 
 function AboutUs() {
     return (
@@ -14,6 +15,7 @@ function AboutUs() {
             <CompanyAbout />
             <ServicesList />
             <Partners />
+            <WorkersList />
             <Footer />
         </div>
     );
