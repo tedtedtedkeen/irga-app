@@ -10,41 +10,39 @@ const Modal = ({
   isOpen = false
 }) => {
 
-  if (isOpen == false) return null;
-
-  return (
-    <div
-      className={styles.main}
-      onClick={onClose}
-    >
-      <img
-        src={bigLogo}
-        alt="Irga B.I.G"
-      />
-      <div>
-        <ModalNav />
-        {
-          useData( 
-              "contactsText",
-              state => state.map(item => {
-                  return item.id !== 4
-                      ? null
-                      : <p
-                          key={item.id}
-                      >
-                          { item.text }
-                      </p>
-          }))
-        }
-      </div>
-      <button
-        className={styles.button}
-        onClick={onClose}
+  return (isOpen == false) 
+    ? null
+    : <div
+        className={styles.main}
+        onClick={(isOpen) => onClose(!isOpen)}
       >
-        <MdClear />
-      </button>
-    </div>
-  );
-}
+        <img
+          src={bigLogo}
+          alt="Irga B.I.G"
+        />
+        <div>
+          <ModalNav />
+          {
+            useData( 
+                "contactsText",
+                state => state.map(item => {
+                    return item.id !== 4
+                        ? null
+                        : <p
+                            key={item.id}
+                        >
+                            { item.text }
+                        </p>
+            }))
+          }
+        </div>
+        <button
+          className={styles.button}
+          onClick={(isOpen) => onClose(!isOpen)}
+        >
+          <MdClear />
+        </button>
+      </div>
+};
 
 export { Modal };
