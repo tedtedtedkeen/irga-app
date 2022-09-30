@@ -16,6 +16,10 @@ a {
     color: var(--bodyText);
 }
 
+.active {
+    color: var(--grayText);
+}
+
 button {
     cursor: pointer;
 }

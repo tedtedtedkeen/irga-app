@@ -12,23 +12,24 @@ import { Urban } from "./pages/Projects/projects-pages/Urban";
 import { Layout } from "./pages/Layout";
 
 function App() {
-    return (
-        <>
-            <Routes>
-                <Route path="/" element={<Layout />}>
-                    <Route index element={<MainPage />} />
-                    <Route path="about" element={<AboutUs />} />
-                    <Route path="projects" element={<Projects />}>
-                        <Route path="urban" element={<Arch />} />
-                        <Route path="arch" element={<Landscape />} />
-                        <Route path="space" element={<Space />} />
-                        <Route path="landscape" element={<Urban />} />
-                    </Route >
-                    <Route path="science" element={<Science />} />
-                </Route>
-            </Routes> 
-        </>
-    )
+  return (
+    <>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<MainPage />} />
+          <Route path="about" element={<AboutUs />} />
+          <Route path="projects" element={<Projects />}>
+            <Route path="projects" element={<Projects />} />
+            <Route path="urban" element={<Arch />} />
+            <Route path="arch" element={<Landscape />} />
+            <Route path="space" element={<Space />} />
+            <Route path="landscape" element={<Urban />} />
+          </Route>
+          <Route path="science" element={<Science />} />
+        </Route>
+      </Routes>
+    </>
+  );
 }
 
 export { App };

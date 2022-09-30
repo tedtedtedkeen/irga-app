@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./ProjectsNav.module.scss";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const ProjectsNav = () => {
   return (
@@ -14,19 +14,19 @@ const ProjectsNav = () => {
           <div 
 						className={styles.circle}
 					></div>
-          {/* <Link to={"/projects"}>Все проекты</Link> */}
+          <NavLink to={"projects"}>Все проекты</NavLink>
         </li>
         <li>
-          <Link to={"/urban"}>Градостроительство</Link>
+          <NavLink to={"urban"}>Градостроительство</NavLink>
         </li>
         <li>
-          <Link to={"/arch"}>Архитектура</Link>
+          <NavLink to={"arch"}>Архитектура</NavLink>
         </li>
         <li>
-					<Link to={"/space"}>Общественное пространство</Link>
+					<NavLink to={"space"}>Общественное пространство</NavLink>
 				</li>
         <li>
-					<Link to={"/landscape"}>Ландшафтный дизайн</Link>
+					<NavLink to={"landscape"}>Ландшафтный дизайн</NavLink>
 				</li>
       </ul>
     </nav>
