@@ -1,7 +1,7 @@
 import React from 'react';
-import { useData } from '../../../../hooks/useData';
+import { useData } from '../../../../../hooks/useData';
 import styles from "./WorkersList.module.scss";
-import { Worker } from "../../../../ui/Worker";
+import { Worker } from "../../../../../ui/Worker";
 
 const WorkersList = () => {
   return (

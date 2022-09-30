@@ -1,11 +1,10 @@
-import React, { useState } from "react";
-import { ViewProjects } from "../../components/ViewProjects";
-import { ProjectsHeader } from "../../ui/ProjectsHeader/Header";
-import { Footer } from "../../ui/Footer";
-import { useData } from "../../hooks/useData";
+import React from "react";
+import { ViewProjects } from "../../../components/ViewProjects";
+import { ProjectsHeader } from "../../../ui/ProjectsHeader/Header";
+import { useData } from "../../../hooks/useData";
 import styles from "./Projects.module.scss";
-import { Modal } from "../../ui/Modal";
-import { toggleModal } from "../../hooks/toggleModal";
+import { Modal } from "../../../ui/Modal";
+import { toggleModal } from "../../../hooks/toggleModal";
 
 function Projects() {
 
@@ -35,7 +34,6 @@ function Projects() {
 					)
 				}
       </div>
-      <Footer />
     </>
   );
 }

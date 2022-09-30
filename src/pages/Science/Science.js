@@ -1,5 +1,5 @@
 import React from "react";
-import { Header } from "../../ui/DefaultHeader/Header";
+import { Header } from "../../../ui/DefaultHeader/Header";
 
 function Science() {
     return (

@@ -1,8 +1,8 @@
 import React from 'react';
-import { More } from "../../../../ui/More";
+import { More } from "../../../../../ui/More";
 import styles from "./MainProject.module.scss";
-import { Subtitle } from "../../../../ui/Subtitle";
-import { PrNum } from "../../../../ui/PrNum";
+import { Subtitle } from "../../../../../ui/Subtitle";
+import { PrNum } from "../../../../../ui/PrNum";
 
 function MainProject({ data }) {
 

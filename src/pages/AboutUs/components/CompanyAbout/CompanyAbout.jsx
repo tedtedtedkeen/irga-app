@@ -1,10 +1,10 @@
 import React from "react";
 import styles from "./CompanyAbout.module.scss";
-import { useData } from "../../../../hooks/useData";
-import { About } from "../../../../components/AboutUs";
-import { BigSubtitle } from "../../../../ui/BigSubtitle";
-import dataText from "../../../../data/subtitles-data.json";
-import bigImage from "../../../../public/images/big-irga.com";
+import { useData } from "../../../../../hooks/useData";
+import { About } from "../../../../../components/AboutUs";
+import { BigSubtitle } from "../../../../../ui/BigSubtitle";
+import dataText from "../../../../../data/subtitles-data.json";
+import bigImage from "../../../../../public/images/big-irga.png";
 
 function CompanyAbout() {
     return (

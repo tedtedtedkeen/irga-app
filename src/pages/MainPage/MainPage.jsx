@@ -1,11 +1,10 @@
 import React from "react";
-import { Header } from "../../ui/DefaultHeader/Header";
-import { useData } from "../../hooks/useData";
+import { Header } from "../../../ui/DefaultHeader/Header";
+import { useData } from "../../../hooks/useData";
 import { MainProject } from "./components/MainProject";
-import { About } from "../../components/AboutUs";
-import { ViewProjects } from "../../components/ViewProjects";
-import { Contacts } from "../../components/Contacts";
-import { Footer } from "../../ui/Footer";
+import { About } from "../../../components/AboutUs";
+import { ViewProjects } from "../../../components/ViewProjects";
+import { Contacts } from "../../../components/Contacts";
 
 function MainPage() {
     return (
@@ -49,7 +48,6 @@ function MainPage() {
                     })
             }
             <Contacts />
-            <Footer />
         </>
     );
 }
