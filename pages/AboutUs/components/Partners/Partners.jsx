@@ -1,5 +1,5 @@
 import React from 'react';
-import image from "../../public/images/partners-image.png";
+import image from "../../../../public/images/partners-image.png";
 import styles from "./Partners.module.scss";
 
 const Partners = () => {

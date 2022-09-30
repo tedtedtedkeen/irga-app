@@ -5,28 +5,20 @@ import { Footer } from "../../ui/Footer";
 import { useData } from "../../hooks/useData";
 import styles from "./Projects.module.scss";
 import { Modal } from "../../ui/Modal";
-const bodyScrollLock = require("body-scroll-lock"); 
+import { toggleModal } from "../../hooks/toggleModal";
 
 function Projects() {
 
-  const [state, setState] = useState(false);
-  const disableScrollLock = bodyScrollLock.disableBodyScroll;
-  const enableBodyScroll = bodyScrollLock.enableBodyScroll;
-
-  const handlerFunc = (show) => {
-    setState(!show);
-    show ? enableBodyScroll(<Modal />) : disableScrollLock(<Modal />);
-  }
+  let [state, changeState] = toggleModal(<Modal />);
 
   return (
     <>
       <Modal 
-        onClose={handlerFunc}
+        onClose={changeState}
         isOpen={state}
       />
       <ProjectsHeader 
-        open={handlerFunc}
-        isOpen={state}
+        onOpen={changeState}
       />
       <div
 				className={styles.projects}

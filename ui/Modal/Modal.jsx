@@ -14,7 +14,7 @@ const Modal = ({
     ? null
     : <div
         className={styles.main}
-        onClick={(isOpen) => onClose(!isOpen)}
+        onClick={onClose}
       >
         <img
           src={bigLogo}
@@ -38,7 +38,7 @@ const Modal = ({
         </div>
         <button
           className={styles.button}
-          onClick={(isOpen) => onClose(!isOpen)}
+          onClick={onClose}
         >
           <MdClear />
         </button>

@@ -1,6 +1,6 @@
 import React from "react";
-import { useData } from "../../hooks/useData";
-import { Service } from "../../ui/Service";
+import { useData } from "../../../../hooks/useData";
+import { Service } from "../../../../ui/Service";
 import styles from "./ServicesList.module.scss";
 
 function ServicesList() {

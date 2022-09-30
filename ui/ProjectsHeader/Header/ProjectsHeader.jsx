@@ -1,16 +1,28 @@
 import React from 'react';
 import { ProjectsNav } from '../ProjectsNav';
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
+import styles from "./ProjectsHeader.module.scss";
+import irgaLogoX2 from "../../../public/images/irga-logo-x2.png";
 
 const ProjectsHeader = ({ 
-  open = f => f,
-  state 
+  onOpen = f => f
 }) => {
   return (
-    <div>
-      <ProjectsNav />
+    <div
+      className={styles.main}
+    >
+      <img
+          src={irgaLogoX2}
+          alt="IRGA Logotype"
+      />
+      <div
+        className={styles.nav}
+      >
+        <ProjectsNav />
+      </div>
+
       <button
-        onClick={() => open(state)}
+        onClick={onOpen}
       >
         <HiOutlineMenuAlt4 />
       </button>
