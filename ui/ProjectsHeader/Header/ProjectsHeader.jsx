@@ -20,11 +20,12 @@ const ProjectsHeader = ({
       >
         <ProjectsNav />
       </div>
-
       <button
         onClick={onOpen}
       >
-        <HiOutlineMenuAlt4 />
+        <HiOutlineMenuAlt4 
+          className={styles.icon}
+        />
       </button>
     </div>
   )

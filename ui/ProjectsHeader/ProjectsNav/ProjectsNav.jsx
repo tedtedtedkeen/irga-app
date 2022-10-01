@@ -14,7 +14,7 @@ const ProjectsNav = () => {
           <div 
 						className={styles.circle}
 					></div>
-          <NavLink to={"projects"}>Все проекты</NavLink>
+          <NavLink to={"/"}>Все проекты</NavLink>
         </li>
         <li>
           <NavLink to={"urban"}>Градостроительство</NavLink>

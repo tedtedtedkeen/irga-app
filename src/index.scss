@@ -14,10 +14,15 @@ ul li {
 a {
     text-decoration: none;
     color: var(--bodyText);
+    transition: 0.1s ease all;
+}
+
+a:hover {
+    color: var(--grayText);
 }
 
 .active {
-    color: var(--grayText);
+    color: var(--lightGray);
 }
 
 button {
@@ -36,8 +41,9 @@ h2 {
     --headText: #000;
     --bodyText: #393939;
     --grayText: #777777;
+    --lightGray: #8C8B8B;
     --primaryColor: #93B2AD;
-    --secondaryColor: #BCD5D1;
+    --secondaryColor: #B0C0BE;
 }
 
 body {

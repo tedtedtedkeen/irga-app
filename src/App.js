@@ -1,6 +1,6 @@
 import React from "react";
 import "./index.scss";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 import { MainPage } from "./pages/MainPage";
 import { AboutUs } from "./pages/AboutUs";
 import { Science } from "./pages/Science";
@@ -10,6 +10,8 @@ import { Landscape } from "./pages/Projects/projects-pages/Landscape";
 import { Space } from "./pages/Projects/projects-pages/Space";
 import { Urban } from "./pages/Projects/projects-pages/Urban";
 import { Layout } from "./pages/Layout";
+import { NotFound } from "./pages/NotFound";
+import { ProjectPage } from "./pages/ProjectPage";
 
 function App() {
   return (
@@ -18,14 +20,10 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<MainPage />} />
           <Route path="about" element={<AboutUs />} />
-          <Route path="projects" element={<Projects />}>
-            <Route path="projects" element={<Projects />} />
-            <Route path="urban" element={<Arch />} />
-            <Route path="arch" element={<Landscape />} />
-            <Route path="space" element={<Space />} />
-            <Route path="landscape" element={<Urban />} />
-          </Route>
+          <Route path="projects" element={<Projects />} />
+          <Route path="projects/:id" element={<ProjectPage />} />
           <Route path="science" element={<Science />} />
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </>

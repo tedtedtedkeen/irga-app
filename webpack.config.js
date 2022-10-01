@@ -10,7 +10,8 @@ module.exports = {
 
     output: {
         path: path.resolve(__dirname, "dist"),
-        filename: "bundle.js"
+        filename: "bundle.js",
+        publicPath: "auto"
     },
 
     plugins: [
@@ -71,5 +72,8 @@ module.exports = {
     },
 
     devtool: "source-map",
+    devServer: {
+        historyApiFallback: true,
+    },
 
 };
