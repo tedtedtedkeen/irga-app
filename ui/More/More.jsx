@@ -4,15 +4,28 @@ import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import { Link } from "react-router-dom";
 
 const More = ({
-  id
+  id,
+  page
 }) => {
+  console.log(page);
   return (
-    <Link to={`${id}`}>
-      <button className={styles.button}>
-        <p className={styles.text}>Подробнее</p>
-        <div className={styles.strelka}>
+    <Link to={`${page}${id}`}>
+      <button 
+        className={styles.button}
+      >
+        <p 
+          className={styles.text}
+        >
+          Подробнее
+        </p>
+        <div 
+          className={styles.strelka}
+        >
           <HiOutlineArrowNarrowRight className={styles.arrow} />
-          <div className={styles.circle}></div>
+          <div 
+            className={styles.circle}
+            >
+          </div>
         </div>
       </button>
     </Link>

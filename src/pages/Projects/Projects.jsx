@@ -27,8 +27,9 @@ function Projects() {
 						"semiProjectsText", 
 						(state) => {
               return <ViewProjects 
-								text={state[0]} 
-								nav={false} 
+								text={state[0]}
+								nav={false}
+                page={""}
 							/>;
           	}
 					)

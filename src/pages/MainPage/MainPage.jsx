@@ -7,50 +7,32 @@ import { ViewProjects } from "../../../components/ViewProjects";
 import { Contacts } from "../../../components/Contacts";
 
 function MainPage() {
-
-    return (
-        <>
-            <Header />
-            {
-                useData(
-                    "mainProjects",
-                    state => {
-                        return state.map((item) => {
-                            return (
-                                <MainProject
-                                    key={item.id}
-                                    data={item}
-                                />
-                            );
-                        })
-                    })
-            }
-            {
-                useData(
-                    "oNas",
-                    state => {
-                        return (
-                            <About
-                                text={state[0]}
-                                showMore={true}
-                            />
-                        );
-                    })
-            }
-            {
-                useData(
-                    "semiProjectsText",
-                    state => {
-                        return (
-                            <ViewProjects
-                                text={state[0]}
-                            />
-                        );
-                    })
-            }
-            <Contacts />
-        </>
-    );
+  return (
+    <>
+      <Header />
+      {
+				useData(
+					"projects", 
+					(state) => state.map((item) => {
+          	return item.id == 3 
+							? <MainProject 
+									key={item.id}
+									data={item}
+									page={"projects/"}
+								/>
+							: null
+        	})
+      	)
+			}
+      {useData("oNas", (state) => {
+        return <About text={state[0]} showMore={true} />;
+      })}
+      {useData("semiProjectsText", (state) => {
+        return <ViewProjects page={"projects/"} text={state[0]} />;
+      })}
+      <Contacts />
+    </>
+  );
 }
 
 export { MainPage };

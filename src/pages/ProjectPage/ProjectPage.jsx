@@ -10,8 +10,12 @@ const ProjectPage = () => {
 
   return (
     <div>
-      <h1>This is project page</h1>
-      <h3> {id} </h3>
+      <h1>
+        This is project page
+      </h1>
+      <h3>
+        {id} 
+      </h3>
       {
         useData(
           "projects",

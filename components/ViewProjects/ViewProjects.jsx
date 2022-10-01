@@ -5,7 +5,12 @@ import { useData } from "../../hooks/useData";
 import { BigProject } from "../../ui/BigProject";
 import { LilProject } from "../../ui/LilProject";
 
-const ViewProjects = ({ text, nav = true }) => {
+const ViewProjects = ({
+  text,
+  nav = true,
+  page
+}) => {
+  console.log(page);
   return (
     <>
       <div className={styles.head}>
@@ -26,11 +31,13 @@ const ViewProjects = ({ text, nav = true }) => {
 						state => state.map(item => {
 							if (item.id > 6) return null;
 							return (item.id == 3 || item.id == 4)
-								? <BigProject 
+								? <BigProject
+                  page={page}
 									data={item}
 									key={item.id}
 								/>
-								: <LilProject 
+								: <LilProject
+                  page={page}
 									data={item}
 									key={item.id}
 								/>

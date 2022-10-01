@@ -16,6 +16,7 @@
     font-weight: 400;
     font-size: 45px;
     max-width: 550px;
+    text-transform: uppercase;
 }
 
 .bottom {
@@ -28,7 +29,7 @@
 }
 
 .image {
-    // min-width: 685px;
+    min-width: 685px;
     max-height: 585px;
     flex-basis: 50%;
 }
