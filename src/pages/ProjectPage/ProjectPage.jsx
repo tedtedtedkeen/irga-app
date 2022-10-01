@@ -3,18 +3,10 @@ import { useParams } from 'react-router-dom';
 import { BigSubtitle } from '../../../ui/BigSubtitle';
 import bristolImage from "../../../public/images/image-bristol.png";
 import { useData } from '../../../hooks/useData';
+import { Layout } from './ProjectLayout/Layout';
 
 const ProjectPage = () => {
   const {id} = useParams();
-
-  // useData(
-  //   "semiOneProjects",
-  //   state => state.map(item => {
-  //     return item.id === id
-  //       ? item
-  //       : null
-  //   })
-  // );
 
   return (
     <div>
@@ -22,12 +14,13 @@ const ProjectPage = () => {
       <h3> {id} </h3>
       {
         useData(
-          "semiOneProjects",
+          "projects",
           state => state.map(item => {
             return item.id == id
-              ? <p>
-                { item.title }
-              </p>
+              ? <Layout
+                key={item.id} 
+                {...item}
+              />
               : null
           })
         )

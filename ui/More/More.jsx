@@ -1,11 +1,13 @@
 import React from "react";
-// import arrow from "../../public/images/arrow.png";
 import styles from "./More.module.scss";
-import { CgArrowLongRight } from "react-icons/cg";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
+import { Link } from "react-router-dom";
 
-const More = () => {
+const More = ({
+  id
+}) => {
   return (
+    <Link to={`${id}`}>
       <button className={styles.button}>
         <p className={styles.text}>Подробнее</p>
         <div className={styles.strelka}>
@@ -13,6 +15,7 @@ const More = () => {
           <div className={styles.circle}></div>
         </div>
       </button>
+    </Link>
   );
 };
 

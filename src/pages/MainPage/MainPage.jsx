@@ -7,6 +7,7 @@ import { ViewProjects } from "../../../components/ViewProjects";
 import { Contacts } from "../../../components/Contacts";
 
 function MainPage() {
+
     return (
         <>
             <Header />

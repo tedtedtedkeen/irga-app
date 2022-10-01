@@ -4,7 +4,10 @@ import { ref, onValue } from "firebase/database";
 
 const db = StartFirebase();
 
-const useData = (col, render = f => f) => {
+const useData = (
+  col, 
+  render = f => f
+) => {
 
   const [state, setState] = useState([]);
 
@@ -14,7 +17,7 @@ const useData = (col, render = f => f) => {
         const dataCategory = data[col];
         const dataArr = Object.values(dataCategory);
         if (data !== null) {
-            setState(dataArr);
+          setState(dataArr.sort((a, b) => a.id - b.id));
         }
     })
   }, [])
