@@ -4,7 +4,7 @@ import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import { Link } from "react-router-dom";
 
 const More = ({
-  id,
+  id = "",
   page
 }) => {
   console.log(page);

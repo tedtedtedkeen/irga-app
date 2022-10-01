@@ -24,12 +24,24 @@ function MainPage() {
         	})
       	)
 			}
-      {useData("oNas", (state) => {
-        return <About text={state[0]} showMore={true} />;
-      })}
-      {useData("semiProjectsText", (state) => {
-        return <ViewProjects page={"projects/"} text={state[0]} />;
-      })}
+      {
+        useData(
+          "oNas", 
+          (state) => <About 
+            text={state[0]} 
+            showMore={true} 
+          />
+        )
+      }
+      {
+        useData(
+          "semiProjectsText", 
+          (state) => <ViewProjects 
+            page={"projects/"} 
+            text={state[0]} 
+          />
+        )
+      }
       <Contacts />
     </>
   );

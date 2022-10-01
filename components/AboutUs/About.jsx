@@ -25,7 +25,9 @@ const About = ({ showMore = false, text }) => {
                     >
                         { text }
                     </p>
-                    {showMore && <More />}
+                    {showMore && <More 
+                        page={"about"}
+                    />}
                 </div>
                 <div
                     className={styles.tables}
