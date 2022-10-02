@@ -1,0 +1,34 @@
+
+
+.main {
+  min-height: 727px;
+  display: flex;
+  gap: 149px;
+  background-color: var(--cheColor);
+  align-items: center;
+
+  img {
+    min-width: 638px;
+    max-height: 564px;
+  }
+
+  .leftSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 80px;
+    padding-left: 68px;
+    background-color: blue;
+  
+    h2 {
+      max-width: 585px;
+    }
+  }
+  
+  .next {
+    display: flex;
+    gap: 79px;
+    align-items: center;
+  }
+}
+

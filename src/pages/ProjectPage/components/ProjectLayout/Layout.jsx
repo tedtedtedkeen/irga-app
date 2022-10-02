@@ -1,4 +1,5 @@
 import React from 'react';
+import { BigSubtitle } from '../../../../../ui/BigSubtitle';
 import styles from "./Layout.module.scss";
 
 const Layout = ({
@@ -14,8 +15,13 @@ const Layout = ({
   client,
   address
 }) => {
+  const data = {
+    text: idea,
+  }
   return (
-    <div>
+    <div
+      className={styles.container}
+    >
       <h2>
         { title }
       </h2>
@@ -24,12 +30,15 @@ const Layout = ({
         src={img} 
         alt="Image" 
       />
-      <h2>
+      <h2
+        className={styles.secondtitle}
+      >
         Идея проекта
       </h2>
-      <p>
-        { idea }
-      </p>
+      <BigSubtitle 
+        data={data}
+        centered={true}
+      />
       <div
         className={styles.infoPage}
       >

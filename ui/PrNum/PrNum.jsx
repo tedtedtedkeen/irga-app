@@ -3,10 +3,13 @@ import styles from "./PrNum.module.scss";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import { HiOutlineArrowNarrowLeft } from "react-icons/hi";
 
-const PrNum = ({ id }) => {
+const PrNum = ({ 
+    id,
+    green = false
+}) => {
     return (
         <div
-            className={styles.num}
+            className={green ? styles.green : styles.num}
         >
             <button>
                 <HiOutlineArrowNarrowLeft 
@@ -23,6 +26,6 @@ const PrNum = ({ id }) => {
             </button>
         </div>
     );
-}
+};
 
 export { PrNum };

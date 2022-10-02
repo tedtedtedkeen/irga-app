@@ -10,7 +10,6 @@ const ViewProjects = ({
   nav = true,
   page
 }) => {
-  console.log(page);
   return (
     <>
       <div className={styles.head}>
