@@ -8,6 +8,7 @@ const LilProject = ({
   pad = false,
   page
 }) => {
+  console.log(data.id);
   return (
     <div 
       className={pad ? styles.subMain : styles.main}

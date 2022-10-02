@@ -7,7 +7,6 @@ const More = ({
   id = "",
   page
 }) => {
-  console.log(page);
   return (
     <Link to={`${page}${id}`}>
       <button 

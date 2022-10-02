@@ -4,7 +4,7 @@ import styles from "./BigProject.module.scss";
 
 const BigProject = ({
 	data,
-  page
+  page,
 }) => {
   return (
     <div className={styles.main}>

@@ -5,7 +5,8 @@ import { HiOutlineArrowNarrowLeft } from "react-icons/hi";
 
 const PrNum = ({ 
     id,
-    green = false
+    green = false,
+    total = 5
 }) => {
     return (
         <div
@@ -17,7 +18,7 @@ const PrNum = ({
                 />
             </button>
             <p>
-                {id}/5
+                {id}/{total}
             </p>
             <button>
                 <HiOutlineArrowNarrowRight 

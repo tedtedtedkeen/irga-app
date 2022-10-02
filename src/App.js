@@ -12,6 +12,7 @@ import { Urban } from "./pages/Projects/projects-pages/Urban";
 import { Layout } from "./pages/Layout";
 import { NotFound } from "./pages/NotFound";
 import { ProjectPage } from "./pages/ProjectPage";
+import { SciencePage } from "./pages/SciencePage";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="projects" element={<Projects />} />
           <Route path="projects/:id" element={<ProjectPage />} />
           <Route path="science" element={<Science />} />
+          <Route path="science/:id" element={<SciencePage />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

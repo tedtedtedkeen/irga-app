@@ -1,0 +1,23 @@
+
+
+
+.head {
+  padding: 106px 0px 0px 52px;
+
+  p {
+    max-width: 272px;
+    margin-bottom: 88px;
+    margin-left: 337px;
+    font-size: 18px;
+    line-height: 145%;
+    color: var(--bodyText);
+  }
+}
+
+.body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0px 50px 0px 71px;
+  margin-bottom: 150px;
+}
