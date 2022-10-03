@@ -18,7 +18,7 @@ const SubScience = ({
           className={styles.next}
         >
           <p>
-            Следующий проект
+            Читать дальше
           </p>
           <PrNum 
             id={id}

@@ -1,0 +1,85 @@
+
+
+
+.scienceLayout {
+  h2 {
+    margin: 111px 0px 111px 270px;
+    max-width: 940px;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 145%;
+    color: var(--bodyText);
+    max-width: 585px;
+  }
+
+  .firstImage {
+    width: 100%;
+    max-height: 572px;
+  }
+
+  .firstText {
+    margin: 107px 0px 32px 438px;
+  }
+
+  .secondText {
+    margin: 0px 0px 91px 438px;
+  }
+
+  .thirdBlock {
+    display: flex;
+    align-items: center;
+    img {
+      max-width: 623px;
+      min-height: 627px;
+    }
+
+    div {
+      margin-left: 98px;
+    }
+
+    div > p:nth-child(-n+1) {
+      margin-bottom: 32px;
+    }
+  }
+
+  .fifthText {
+    margin: 107px 0px 107px 57px;
+  }
+
+  .thirdImage {
+    display: flex;
+    justify-content: flex-end;
+
+    img {
+      max-width: 1312px;
+      min-height: 627px;
+    }
+  }
+
+  .sixthText {
+    margin: 125px 0px 124px 721px;
+  }
+
+  .fourthImage {
+    max-width: 1312px;
+    min-height: 627px;
+  }
+
+  .fifthImage {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 107px 0px 179px 107px;
+
+    div > p:nth-child(-n+1) {
+      margin-bottom: 110px;
+    }
+
+    img {
+      max-width: 623px;
+      min-height: 916px;
+    }
+  }
+}

@@ -6,50 +6,113 @@ import { SubScience } from '../../../../../components/SubScience';
 const Layout = ({
   id,
   title,
-  img
+  category,
+  img,
+  firstImage,
+  secondImage,
+  thirdImage,
+  fourthImage,
+  fifthImage,
+  firstText,
+  secondText,
+  thirdText,
+  fourthText,
+  fifthText,
+  sixthText,
+  seventhText,
+  eighthText
 }) => {
   return (
-    <div>
+    <div
+      className={styles.scienceLayout}  
+    >
       <h2>
         {title}
       </h2>
-      <img 
-        src="" 
-        alt="" 
+      <img
+        src={firstImage}
+        alt="first-image"
+        className={styles.firstImage}
       />
-      <p>
-
+      <p
+        className={styles.firstText}
+      >
+        {
+          firstText
+        }
       </p>
-      <div>
+      <p
+        className={styles.secondText}
+      >
+        {
+          secondText
+        }
+      </p>
+      <div
+        className={styles.thirdBlock}
+      >
         <img 
-          src="" 
-          alt="" 
+          src={secondImage} 
+          alt="second-image" 
         />
-        <p>
-
-        </p>
+        <div>
+          <p>
+            {
+              thirdText
+            }
+          </p>
+          <p>
+            {
+              fourthText
+            }
+          </p>
+        </div>
       </div>
-      <p>
-
+      <p
+        className={styles.fifthText}
+      >
+        {
+          fifthText
+        }
       </p>
-      <img 
-        src="" 
-        alt="" 
-      />
-      <p>
-
-      </p>
-      <img 
-        src="" 
-        alt="" 
-      />
-      <div>
-        <p>
-
-        </p>
+      <div
+        className={styles.thirdImage}
+      >
         <img 
-          src="" 
-          alt="" 
+          src={thirdImage}
+          alt="third-image" 
+        />
+      </div>
+      <p
+        className={styles.sixthText}
+      >
+        {
+          sixthText
+        }
+      </p>
+      <img
+        className={styles.fourthImage}
+        src={fourthImage} 
+        alt="fourth-image" 
+      />
+      <div
+        className={styles.fifthImage}
+      >
+        <div>
+          <p>
+            {
+              seventhText
+            }
+          </p>
+          <p>
+            {
+              eighthText
+            }
+          </p>
+        </div>
+        <img 
+          src={fifthImage}
+          alt="fifth-image" 
         />
       </div>
       {

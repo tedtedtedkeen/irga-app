@@ -22,9 +22,9 @@ function Service({ data, changeSide = false }) {
                 >
                     {data.subtitle}
                 </p>
-                <div>
+                {/* <div>
                     <More />
-                </div>
+                </div> */}
             </div>
         </div>
     );
