@@ -3,16 +3,17 @@ import { createRoot } from "react-dom/client";
 import { App } from "./App";
 import {
     BrowserRouter as Router,
-    Switch, 
-    Route, 
+    Switch,
+    Route,
     Link
 } from "react-router-dom";
+import { DataProvider } from "../data/DataProvider";
 
 const container = document.getElementById("root");
 const root = createRoot(container);
 
 root.render(
-    <Router>
-        <App />
-    </Router>
+  <DataProvider>
+		<App />
+	</DataProvider>
 );

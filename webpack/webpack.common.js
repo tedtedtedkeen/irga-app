@@ -5,11 +5,11 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports = {
 
     entry: {
-        main: path.resolve(__dirname, "./src/index.js")
+        main: path.resolve(__dirname, "../src/index.js")
     },
 
     output: {
-        path: path.resolve(__dirname, "dist"),
+        path: path.resolve(__dirname, "../build"),
         filename: "bundle.js",
         publicPath: "auto"
     },
@@ -17,8 +17,8 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             title: "Irga City",
-            template: path.resolve(__dirname, "./public/index.html"),
-            filename: "index.html"
+            template: path.resolve(__dirname, "../public/index.html"),
+            filename: "./index.html"
         }),
         new MiniCssExtractPlugin()
     ],
@@ -65,15 +65,13 @@ module.exports = {
                 exclude: /\.module\.(css)$/,
             },
             {
-                test: /\.(gif|png|jpg|svg)$/,
-                loader: "file-loader"
+                test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
+                type: 'asset/resource',
+            },
+            {
+                test: /\.(woff(2)?|eot|ttf|otf|svg|)$/,
+                type: 'asset/inline',
             }
         ]
     },
-
-    devtool: "source-map",
-    devServer: {
-        historyApiFallback: true,
-    },
-
 };
