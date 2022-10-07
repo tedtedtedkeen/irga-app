@@ -19,16 +19,13 @@ function DataProvider({ children }) {
 	}, [])
 	
 	const useCategory = (cat) => {
-	
 		const [category, setCategory] = useState();
-	
 		useEffect(() => {
 			onValue(ref(db, cat), (snapshot) => {
 				const data = snapshot.val();
 				setCategory(Object.values(data));
 			})
 		}, []) 
-	
 		return category;
 	};
 

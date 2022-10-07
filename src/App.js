@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./index.scss";
-import { useDatabase } from "../data/DataProvider";
-// import { useData } from "../data/useData";
-
+import { useDatabase } from "./store/DataProvider";
 // import { Routes, Route, Link } from "react-router-dom";
 // import { MainPage } from "./pages/MainPage";
 // import { AboutUs } from "./pages/AboutUs";

@@ -7,7 +7,7 @@ import {
     Route,
     Link
 } from "react-router-dom";
-import { DataProvider } from "../data/DataProvider";
+import { DataProvider } from "./store/DataProvider";
 
 const container = document.getElementById("root");
 const root = createRoot(container);
