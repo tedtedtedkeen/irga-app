@@ -1,0 +1,53 @@
+
+
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 323px;
+  max-width: calc(100% - 20px);
+  background-color: inherit;
+  row-gap: 5px;
+  column-gap: 119px;
+  transition: 0.2s all ease;
+
+  .p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    transition: 0.2s all ease;
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    p {
+      font-size: 20px;
+      line-height: 30px;
+      margin-right: 8px;
+    }
+
+    .arrow {
+      position: absolute;
+      font-size: 26px;
+      left: 36px;
+      transition: 0.2s all ease;
+    }
+  }
+}
+
+.button:hover {
+  .p {
+    color: var(--lightBlack);
+  }
+
+  div {
+    .arrow {
+      left: 58px;
+      color: var(--lightBlack);
+    }
+  }
+}

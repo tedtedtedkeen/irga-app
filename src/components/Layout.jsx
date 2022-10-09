@@ -1,15 +1,15 @@
 import React from 'react';
-import { Outlet } from 'react-router-dom';
-import { Footer } from '../../ui/Footer';
+import { NavLink, Outlet } from 'react-router-dom';
+import { Footer } from './Footer/Footer';
 
 const Layout = () => {
   return (
     <>
-      <h2>layout</h2>
       <Outlet />
       <Footer />
     </>
+
   )
-}
+};
 
 export { Layout };

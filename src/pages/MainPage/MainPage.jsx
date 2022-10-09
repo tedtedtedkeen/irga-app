@@ -1,5 +1,5 @@
 import React from "react";
-import { Header } from "../../../ui/DefaultHeader/Header";
+import { Header } from "../../ui/DefaultHeader/Header";
 import { useData } from "../../../hooks/useData";
 import { MainProject } from "./components/MainProject";
 import { About } from "../../../components/AboutUs";
