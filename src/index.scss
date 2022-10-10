@@ -59,26 +59,25 @@ body {
   width: 100%;
   margin: 0px auto;
   font-family: Gilroy, sans-serif;
-  background-color: var(--active);
+//   background-color: var(--active);
 }
 
 .active {
-  position: relative;
-  font-size: 24px;
-  color: #000;
-  padding-left: 32px;
-  span {
-    position: absolute;
-    top: 6px;
-    left: 12px;
-    width: 16px;
-    height: 16px;
-    background-color: lightcoral;
-    border-radius: 50%;
-  }
-}
-
-header {
-  height: 100px;
-  background-color: lightseagreen;
+	position: relative;
+	h5 {
+		position: relative;
+		z-index: 999;
+		color: #000;
+	}
+	span {
+		transition: 0.2s all ease;
+		position: absolute;
+		left: -12px;
+		top: -2px;
+		width: 29px;
+		height: 29px;
+		background-color: var(--active);
+		border-radius: 50%;
+		z-index: 0;
+	}
 }

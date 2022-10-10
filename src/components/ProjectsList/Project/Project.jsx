@@ -7,29 +7,28 @@ const Project = ({
   id,
   title,
   img,
-  category
+  category,
+  big
 }) => {
   return (
-    <Link to="project">
-      <section>
-        <img 
+      <section
+        className={big ? styles.big : styles.little}
+      >
+        <img
           src={img} 
           alt="Project Image" 
         />
         <h3>
           { title }
         </h3>
-        <Link to="category">
-          <p>
-            { category }
-          </p>
-        </Link>
+        <p className={styles.p}>
+          { category }
+        </p>
         <MoreButton 
           page={"project"}
         />
       </section>
-    </Link>
   );
 };
 
-export { Project }
+export { Project };

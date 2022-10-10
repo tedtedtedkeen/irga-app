@@ -1,0 +1,18 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+	gap: 24px;
+
+	a {
+		height: min-content;
+		font-size: 16px;
+		line-height: 145%;
+		color: var(--lightGray);
+		transition: 0.2s all ease;
+	}
+
+	a:hover {
+		color: var(--lightBlack);
+	}
+}

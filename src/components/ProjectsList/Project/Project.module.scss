@@ -1,0 +1,113 @@
+
+
+.big {
+  width: 658px;
+  max-width: calc(100% - 20px);
+  margin-left: 20px;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  h3 {
+    padding-top: 20px;
+    margin-bottom: 8px;
+    font-size: 20px;
+    line-height: 30px;
+    transition: 0.2s all ease;
+    cursor: pointer;
+  }
+
+  h3:hover {
+    color: var(--lightBlack);
+  }
+  
+  .p {
+    margin-bottom: 24px;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--lightBlack);
+    transition: 0.2s all ease;
+    cursor: pointer;
+  }
+
+  .p:hover {
+    color: var(--gray);
+  }
+}
+
+.big:nth-child(even) {
+  margin-left: 0px;
+  margin-right: 20px;
+}
+
+.little {
+  width: 300px;
+  max-width: calc(100% - 20px);
+  margin-left: 0px;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  h3 {
+    padding-top: 20px;
+    margin-bottom: 8px;
+    font-size: 20px;
+    line-height: 30px;
+    transition: 0.2s all ease;
+    cursor: pointer;
+  }
+
+  h3:hover {
+    color: var(--lightBlack);
+  }
+  
+  .p {
+    margin-bottom: 24px;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--lightBlack);
+    transition: 0.2s all ease;
+    cursor: pointer;
+  }
+
+  .p:hover {
+    color: var(--gray); 
+  }
+}
+
+@media (max-width: 1393px) {
+  .big {
+    margin-left: calc(64px * 4);
+  }
+  .little:nth-child(3n) {
+    margin-left: calc(64px * 4);
+  }
+}
+
+@media (max-width: 1069px) {
+  .big {
+    margin-left: calc(64px * 2);
+  }
+
+  .little:nth-child(3n) {
+    margin-left: 0px;
+  }
+
+  .little:nth-child(2n + 3) {
+    margin-left: calc(64px * 2);
+  }
+}
+
+@media (max-width: 880px) {
+  .big {
+    margin-left: 32px;
+  }
+
+  .little:nth-child(2n + 3) {
+    margin-left: 32px;
+  }
+}
