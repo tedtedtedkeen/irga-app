@@ -1,0 +1,74 @@
+.main {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 52px;
+  margin-bottom: 247px; 
+  img {
+    width: 685px;
+    max-width: calc(100% - 20px);
+  }
+  .content {
+    margin-top: 96px;
+    h1 {
+      font-weight: 400;
+      font-size: 45px;
+      max-width: 550px;
+      text-transform: uppercase;
+      font-family: "Defectica";
+    }
+    .bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-top: 64px;
+      padding-right: 32px;
+  
+      .p {
+        font-size: 18px;
+        font-weight: 400;
+        color: var(--bodyText);
+        width: 350px;
+        margin-bottom: 30px;
+        line-height: 145%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1239px) {
+  .main {
+    flex-wrap: wrap-reverse;
+    padding: 0px 0px 0px 20px;
+
+    img {
+      width: 100%;
+      max-width: calc(100% - 20px);
+      height: auto;
+      max-height: calc(100% - 20px);
+    }
+  }
+}
+
+@media (max-width: 524px) {
+  .main {
+    .content {
+      margin-top: 40px;
+      width: 100%;
+      max-width: calc(100% - 20px);
+      h1 {
+        font-size: 26px;
+        line-height: 32px;
+      }
+      .bottom {
+        margin-top: 24px;
+        width: 100%;
+        max-width: calc(100% - 20px);
+        padding-right: 0px;
+        .p {
+          width: 180px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

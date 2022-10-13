@@ -25,6 +25,7 @@ const Project = ({
           { category }
         </p>
         <MoreButton 
+          id={id}
           page={"project"}
         />
       </section>

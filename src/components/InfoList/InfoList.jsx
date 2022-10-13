@@ -2,7 +2,6 @@ import React from 'react';
 import styles from "./InfoList.module.scss";
 import { useDatabase } from '../../store/DataProvider';
 import { Info } from "./Info";
-import { ProjectsNav } from '../ProjectsHeader/ProjectsNav/ProjectsNav';
 
 const InfoList = () => {
 
@@ -11,13 +10,13 @@ const InfoList = () => {
   const tableData = useCategory("aboutUs");
     
     return (
-      <div>
+      <div className={styles.list}>
         {
           tableData && 
           tableData.map((item) => {
             return <Info
               key={item.id}
-              data={item}
+              {...item}
             />
           })
         }

@@ -7,15 +7,15 @@ import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import { ProjectsList } from "./components/ProjectsList/ProjectsList";
 import { Project } from "./components/ProjectsList/Project/Project";
 import { InfoList } from "./components/InfoList/InfoList";
-import { ProjectsNav } from "./components/ProjectsHeader/ProjectsNav/ProjectsNav";
+import { AboutCompany } from "./components/AboutCompany/AboutCompany";
+import { MainPage } from "./pages/Main";
 
-function App() {
+function App() {;
   return (
     <>
-      <ProjectsNav />
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<ProjectsList />} />
+          <Route index element={<MainPage />} />
           <Route path="project" element={<Project />} />
           <Route path="category" element={<InfoList />} />
         </Route>

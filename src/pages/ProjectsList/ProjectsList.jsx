@@ -2,11 +2,11 @@ import React from "react";
 import { ViewProjects } from "../../../components/ViewProjects";
 import { ProjectsHeader } from "../../../ui/ProjectsHeader/Header";
 import { useData } from "../../../hooks/useData";
-import styles from "./Projects.module.scss";
+import styles from "./ProjectsList.module.scss";
 import { Modal } from "../../../ui/Modal";
 import { toggleModal } from "../../../hooks/toggleModal";
 
-function Projects() {
+function ProjectsList() {
 
   let [state, changeState] = toggleModal(<Modal />);
 
@@ -39,4 +39,4 @@ function Projects() {
   );
 }
 
-export { Projects };
+export { ProjectsList };

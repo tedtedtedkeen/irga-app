@@ -5,7 +5,6 @@
   .head {
     display: flex;
     flex-direction: row;
-    padding-right: 150px;
     margin-bottom: 88px;
 
     h2 {
@@ -15,8 +14,10 @@
 
   .subHead {
     display: flex;
+    flex-wrap: wrap;
     padding-top: 127px;
-    gap: 100px;
+    column-gap: 100px;
+    row-gap: 48px;
   }
 
   .paragraph {
@@ -39,8 +40,6 @@
 
 @media (max-width: 880px) {
 	.container {
-		padding-left: 24px;
-
 		.head {
 			h2 {
 				padding-right: 64px;
@@ -54,6 +53,31 @@
 	}
 }
 
-@media (max-width: 740px) {
-	
+@media (max-width: 724px) {
+  .container {
+    padding-left: 20px;
+    .head {
+      position: relative;
+      h2 {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        font-size: 24px;
+        line-height: 32px;  
+        // margin-bottom: 32px;
+      }
+    }
+
+    .paragraph {
+      margin-left: 140px;
+      width: 182px;
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    .subHead {
+      padding-top: 72px;
+    }
+  }
+
 }

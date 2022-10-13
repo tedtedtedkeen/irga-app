@@ -1,0 +1,35 @@
+.main {
+  margin: 0px 84px 114px 52px;
+  h2 {
+    font-size: 45px;
+    line-height: 150%;
+    font-weight: 400;
+    color: var(--darkBlack);
+    margin-bottom: 62px;
+  }
+  .container {
+    display: flex;
+    .textContainer {
+      padding: 72px 193px 132px 124px;
+			max-width: calc(100% - 20px);
+			background-color: var(--active);
+      p {
+        margin-bottom: 12px;
+        font-size: 20px;
+        line-height: 145%;
+        font-weight: 400;
+        min-width: 209px;
+        color: var(--lightBlack);
+      }
+      p:nth-last-child(-n + 1) {
+        margin-bottom: 0px;
+      }
+    }
+    .square {
+      background-color: gray;
+      height: 414px;
+      width: 100%;
+			max-width: calc(100% - 20px);
+    }
+  }
+}

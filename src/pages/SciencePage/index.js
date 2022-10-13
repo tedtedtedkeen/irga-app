@@ -1,1 +1,0 @@
-export { SciencePage } from "./SciencePage";

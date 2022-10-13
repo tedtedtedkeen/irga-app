@@ -111,3 +111,19 @@
     margin-left: 32px;
   }
 }
+
+@media (max-width: 724px) {
+  .big {
+    width: 100%;
+    max-width: calc(100% - 20px);
+    margin-left: 0px;
+  }
+
+  .little:nth-child(even) {
+    margin-left: 24px
+  }
+
+  .little:nth-child(2n + 3) {
+    margin-left: 0px;
+  }
+}

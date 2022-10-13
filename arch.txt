@@ -36,7 +36,14 @@ how to make a child routes?
 how to make a slider?
 how to make a css-style-transition? - done
 
+what we do in the end?
 
+make a routing
+make a slider
+make a yandex cards api 
+
+
+690px -- change title's fz
 
 
 router 

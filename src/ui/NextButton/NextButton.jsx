@@ -7,17 +7,22 @@ function NextButton({
   text,
   id,
   total,
-  page
+  page,
+  index
 }) {
   return (
     <Link to={`${page}${id}`}>
-      <button className={styles.button} >
-        <p className={styles.p} >
-          { text }
-        </p>
+      <button className={text ? styles.text : styles.button} >
+        {
+          text
+            ? <p className={styles.p} >
+              { text }
+            </p>
+            : null
+        }
         <div>
           <p>
-            {id}/{total}
+            {index}/{total}
           </p>
           <HiOutlineArrowNarrowRight className={styles.arrow} />
         </div>

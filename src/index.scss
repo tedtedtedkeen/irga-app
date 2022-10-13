@@ -43,7 +43,7 @@ h2 {
   line-height: 150%;
   font-weight: 400;
   margin-bottom: 62px;
-  font-family: Defectica;
+  font-family: "Inter", sans-serif;
 }
 
 :root {
@@ -81,3 +81,9 @@ body {
 		z-index: 0;
 	}
 }
+
+// @media (max-width: 800px) {
+//   body {
+//     position: fixed;
+//   }
+// }

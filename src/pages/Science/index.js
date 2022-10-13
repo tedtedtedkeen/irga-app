@@ -1,1 +1,1 @@
-export { Science } from "./Science";
+export { SciencePage } from "./SciencePage";

@@ -1,39 +1,41 @@
 import React from 'react';
 import styles from "./Modal.module.scss";
-import bigLogo from "../../public/images/big-irga.png";
+import bigLogo from "../../../public/images/big-irga.png";
 import { MdClear } from "react-icons/md";
 import { ModalNav } from './ModalNav';
-import { useData } from '../../hooks/useData';
+import { useDatabase } from '../../store/DataProvider';
 
 const Modal = ({
   onClose = f => f,
   isOpen = false
 }) => {
 
+  const { useCategory } = useDatabase();
+  const text = useCategory("contactsText");
+
   return (isOpen == false) 
     ? null
     : <div
-        className={styles.main}
+        className={isOpen ? styles.main : styles.close}
         onClick={onClose}
       >
         <img
           src={bigLogo}
           alt="Irga B.I.G"
         />
-        <div>
+        <div className={styles.content}>
           <ModalNav />
           {
-            useData( 
-                "contactsText",
-                state => state.map(item => {
-                    return item.id !== 4
-                        ? null
-                        : <p
-                            key={item.id}
-                        >
-                            { item.text }
-                        </p>
-            }))
+            text &&
+            text.map(item => {
+              return item.id !== 4
+                ? null
+                : <p
+                    key={item.id}
+                >
+                    { item.text }
+                </p>
+            })
           }
         </div>
         <button

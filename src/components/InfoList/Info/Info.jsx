@@ -1,27 +1,20 @@
-import React from 'react';
+import React from "react";
 import styles from "./Info.module.scss";
 
-const Info = ({ 
-    data 
+const Info = ({
+	firstNum,
+	firstText,
+	secondNum,
+	secondText
 }) => {
-    return (
-        <section
-            className={styles.table}
-        >
-            <h2>
-                { data.firstNum }
-            </h2>
-            <p>
-                { data.firstText }
-            </p>
-            <h2> 
-                { data.secondNum } 
-            </h2>
-            <p>
-                { data.secondText }
-            </p>
-        </section>
-    )
-}
+  return (
+    <section className={styles.table}>
+      <h2>{firstNum}</h2>
+      <p>{firstText}</p>
+      <h2>{secondNum}</h2>
+      <p>{secondText}</p>
+    </section>
+  );
+};
 
 export { Info };

@@ -6,7 +6,6 @@ import { Project } from "./Project/Project";
 
 const ProjectsList = ({
   nav = true,
-  page,
   main = true
 }) => {
 

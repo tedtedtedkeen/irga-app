@@ -20,9 +20,6 @@ function Nav() {
         <li>
           <NavLink to="/science">Научная деятельность</NavLink>
         </li>
-        <li>
-          <NavLink to="/contacts">Контакты</NavLink>
-        </li>
       </ul>
     </nav>
   );
