@@ -21,12 +21,9 @@ function MainPage() {
 				isOpen={state}
 				onClose={changeState}
 			/>
-      {/* <HiOutlineMenuAlt4
-				onClick={changeState}
-			/> */}
       <Header />
       <MainProjectsList />
-      {/* {
+      {
         text &&
         text.map((item, i) => {
           return <AboutCompany 
@@ -39,7 +36,7 @@ function MainPage() {
       {
         <ProjectsList />
       }
-      <Contacts /> */}
+      <Contacts />
     </>
   );
 }
