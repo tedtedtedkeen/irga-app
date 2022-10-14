@@ -10,7 +10,8 @@ function MainProject({
 	img, 
 	page, 
 	total,
-	index 
+	ide,
+	nextSlide = f => f
 }) {
   return (
     <div className={styles.main}>
@@ -20,10 +21,11 @@ function MainProject({
 				</h1>
         <div className={styles.bottom}>
           <NextButton 
-						id={id} 
+						id={id}
+						ide={ide}
 						total={total} 
-						index={index} 
 						page={"projects/"} 
+						nextSlide={nextSlide}
 					/>
           <div className={styles.right}>
 						<p className={styles.p}>
