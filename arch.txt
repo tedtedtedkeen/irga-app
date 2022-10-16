@@ -2,19 +2,19 @@
 
 re-usable components 
 
-default-header 
+default-header done
 default-header-navigation
 projects-header
 science-header 
 footer (all pages) 
-title-project (5)
+title-project (5) done
 about-us-info (2) done
-projects-block (2) 
-project-item (a lot)
+projects-block (2) done
+project-item (a lot) done
 service-item (3)
 team-item (9) done
-title-project-page (5)
-project-page (all)
+title-project-page (5) done
+project-page (all) done
 next-project (7) (use in science-item-page)
 science-item (2)
 science-item-page (2)
@@ -33,13 +33,13 @@ burger-menu (a lot) done
 tech-questions 
 
 how to make a child routes?
-how to make a slider?
+how to make a slider? - done
 how to make a css-style-transition? - done
 
 what we do in the end?
 
 make a routing
-make a slider
+make a slider - done
 make a yandex cards api 
 
 

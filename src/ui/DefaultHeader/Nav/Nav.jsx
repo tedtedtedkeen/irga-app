@@ -7,20 +7,10 @@ function Nav() {
     <nav
       className={styles.nav}
     >
-      <ul>
-        <li>
-          <NavLink to="/">Главная</NavLink>
-        </li>
-        <li>
-          <NavLink to="/about">О нас</NavLink>
-        </li>
-        <li>
-          <NavLink to="/projects">Проекты</NavLink>
-        </li>
-        <li>
-          <NavLink to="/science">Научная деятельность</NavLink>
-        </li>
-      </ul>
+      <NavLink to="/">Главная</NavLink>
+      <NavLink to="about">О нас</NavLink>
+      <NavLink to="projects">Проекты</NavLink>
+      <NavLink to="science">Научная деятельность</NavLink>
     </nav>
   );
 }

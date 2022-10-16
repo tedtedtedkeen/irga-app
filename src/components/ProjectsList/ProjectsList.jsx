@@ -10,7 +10,6 @@ const ProjectsList = ({
 }) => {
 
   const { useCategory } = useDatabase();
-
   const projects = useCategory("projects");
 
   return (

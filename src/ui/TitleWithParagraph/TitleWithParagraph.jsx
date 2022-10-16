@@ -1,19 +1,19 @@
 import React from "react";
+import styles from "./TitleWithParagraph.module.scss";
 
 function TitleWithParagraph({ 
   title,
-  bodytext
+  subtitle
 }) {
-	
   return (
-    <>
+    <div className={styles.div}>
       <h2>
         { title }
       </h2>
       <p>
-        { bodytext }
+        { subtitle }
       </p>
-		</>
+		</div>
   );
 }
 

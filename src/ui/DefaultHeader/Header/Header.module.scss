@@ -12,6 +12,8 @@
 
 	.burger {
 		transition: 0.2s all ease;
+		font-size: 48px;
+		cursor: pointer;
 	}
 
 	.burger:hover {
@@ -37,10 +39,6 @@
 @media (max-width: 800px) {
 	.header {
 		padding: 0px 20px;
-		.burger {
-			font-size: 48px;
-			cursor: pointer;
-		}
 	}
 }
 

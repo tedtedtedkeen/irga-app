@@ -5,10 +5,12 @@
   margin-bottom: 247px; 
   animation: show-block 0.3s;
   img {
+    flex-basis: 50%;
     width: 685px;
     max-width: calc(100% - 20px);
   }
   .content {
+    flex-basis: 50%;
     margin-top: 96px;
     h1 {
       font-weight: 400;
@@ -41,7 +43,12 @@
     flex-wrap: wrap-reverse;
     padding: 0px 0px 0px 20px;
 
+    .content {
+      flex-basis: auto;
+    }
+
     img {
+      flex-basis: auto;
       width: 100%;
       max-width: calc(100% - 20px);
       height: auto;
