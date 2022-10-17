@@ -4,28 +4,31 @@ import styles from "./Header.module.scss";
 import irgaLogoX2 from "../../../../public/images/irga-logo-x2.png";
 import { useWindowSize } from "../../../hooks/useWindowSize";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
-import { toggleModal } from "../../../hooks/toggleModal";
-import { Modal } from "../../../ui/Modal";
+import { Link } from "react-router-dom";
 
-function Header({ pad = false }) {
+
+function Header({ 
+	pad = false,
+	onOpen = f => f
+}) {
 
 	const [width] = useWindowSize();
-	let [state, changeState] = toggleModal(<Modal />);
 
   return (
 		<>
-			<Modal 
-				isOpen={state}
-				onClose={changeState}
-			/>
 			<header className={pad ? styles.padHeader : styles.header}>
-      <img src={irgaLogoX2} alt="IRGA Logotype" />
+			<Link to="/">
+        <img 
+          src={irgaLogoX2} 
+          alt="IRGA Logotype" 
+        />
+      </Link>
 			<div>
 				{
 					width < 800
 						? <HiOutlineMenuAlt4 
 							className={styles.burger}
-							onClick={changeState}
+							onClick={onOpen}
 						/>
 						: <Nav />
 				}

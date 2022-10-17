@@ -7,8 +7,10 @@
     padding-bottom: 126px;
   }
   img {
+    width: 100%;
+    max-width: calc(100% - 20px);
     padding-left: 325px;
-    height: 214px;
+    height: auto;
     margin-bottom: 172px;
   }
 }

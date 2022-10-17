@@ -1,11 +1,16 @@
 
 
 .mainList {
-    padding: 100px 269px 39px 40px;
+    padding: 100px 264px 39px 40px;
+    .list {
+        display: flex;
+        flex-direction: column;
+        gap: 90px;
+    }
 }
 
-.list {
-    display: flex;
-    flex-direction: column;
-    gap: 90px;
+@media (max-width: 1110px) {
+    .mainList {
+        padding: 100px 0px 39px 40px;
+    }
 }

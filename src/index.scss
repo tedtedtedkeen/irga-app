@@ -23,16 +23,21 @@ a {
   text-decoration: none;
   color: var(--bodyText);
   transition: 0.1s ease all;
+  font-weight: normal;
+  h3 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: normal;
+  }
 }
 
 a:hover {
   color: var(--grayText);
 }
 
-// .active {
-//   color: var(--lightGray);
-//   text-decoration: line-through;
-// }
+.active {
+  color: var(--lightGray);
+}
 
 button {
   cursor: pointer;
@@ -64,11 +69,10 @@ body {
 }
 
 .active {
-  color: var(--lightGray);
 	position: relative;
 	h5 {
 		position: relative;
-		z-index: 999;
+		z-index: 10;
 		color: #000;
 	}
 	span {

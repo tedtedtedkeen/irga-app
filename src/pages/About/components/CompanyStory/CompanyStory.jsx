@@ -30,12 +30,14 @@ function CompanyStory({
       }
       <div className={styles.storyContainer}>
         <div className={styles.unknownBlock}>
-          <p>
-            { firstOne }
-          </p>
-          <p>
-            { firstTwo }
-          </p>
+          <div className={styles.p}>
+            <p>
+              { firstOne }
+            </p>
+            <p>
+              { firstTwo }
+            </p>
+          </div>
           <div className={styles.div} >sdf</div>
         </div>
         <TitleWithParagraph 

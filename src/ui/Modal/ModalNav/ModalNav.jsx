@@ -9,7 +9,6 @@ const ModalNav = () => {
       <Link to="/about">О нас</Link>
       <Link to="/projects">Проекты</Link>
       <Link to="/science">Научная деятельность</Link>
-      <Link to="/contacts">Контакты</Link>
     </nav>
   );
 };

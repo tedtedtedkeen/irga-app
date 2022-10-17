@@ -1,11 +1,12 @@
 import React from "react";
-import { ProjectsNav } from "../ProjectsNav";
-import { HiOutlineMenuAlt4 } from "react-icons/hi";
-import styles from "./ProjectsHeader.module.scss";
-import irgaLogoX2 from "../../../../public/images/irga-logo-x2.png";
+import styles from "./ScienceHeader.module.scss";
+import irgaLogoX2 from "../../../public/images/irga-logo-x2.png";
 import { Link } from "react-router-dom";
+import { HiOutlineMenuAlt4 } from "react-icons/hi";
 
-const ProjectsHeader = ({ onOpen = (f) => f }) => {
+const ScienceHeader = ({
+  onOpen = f => f
+}) => {
   return (
     <header className={styles.main}>
       <Link to="/">
@@ -21,4 +22,4 @@ const ProjectsHeader = ({ onOpen = (f) => f }) => {
   );
 };
 
-export { ProjectsHeader };
+export { ScienceHeader };

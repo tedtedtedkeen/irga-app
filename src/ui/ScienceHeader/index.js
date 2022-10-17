@@ -1,0 +1,1 @@
+export { ScienceHeader } from "./ScienceHeader";

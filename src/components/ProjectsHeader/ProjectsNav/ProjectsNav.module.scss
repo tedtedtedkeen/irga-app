@@ -11,7 +11,13 @@
 		line-height: 145%;
 		color: var(--lightGray);
 		transition: 0.2s all ease;
+		font-weight: normal;
+		h5 {
+			font-weight: normal;
+		}
 	}
+
+
 
 	a:hover {
 		color: var(--lightBlack);
@@ -30,3 +36,31 @@
 		max-width: calc(100% - 20px);
 	}
 }
+
+
+
+.page {
+  display: flex;
+	column-gap: 24px;
+	width: auto;
+	height: min-content;
+	overflow-x: scroll;
+
+	a {
+		height: min-content;
+		font-size: 16px;
+		line-height: 145%;
+		color: var(--lightGray);
+		transition: 0.2s all ease;
+		white-space: nowrap;
+
+		h5 {
+			font-weight: normal
+		}
+	}
+
+	a:hover {
+		color: var(--lightBlack);
+	}
+}
+

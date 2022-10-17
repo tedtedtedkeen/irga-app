@@ -1,8 +1,9 @@
 import React from "react";
-import { ProjectsHeader } from "../../components/ProjectsHeader/Header";
 import styles from "./ProjectsPage.module.scss";
 import { Modal } from "../../ui/Modal";
 import { toggleModal } from "../../hooks/toggleModal";
+import { ProjectsList } from "../../components/ProjectsList/ProjectsList";
+import { Header } from '../../ui/DefaultHeader/Header';
 
 function ProjectsPage() {
 
@@ -14,15 +15,15 @@ function ProjectsPage() {
         onClose={changeState}
         isOpen={state}
       />
-      <ProjectsHeader 
-        onOpen={changeState}
+      <Header 
+        onOpen={changeState} 
       />
       <div
 				className={styles.projects}
 			>
-        {
-
-				}
+      <ProjectsList 
+        main={false}
+      />
       </div>
     </>
   );

@@ -1,13 +1,21 @@
 .storyContainer {
+	p {
+		font-size: 18px;
+		line-height: 26px;
+	}
 	.unknownBlock {
+		display: flex;
+		justify-content: space-between;
 		padding-left: 52px;
-		p {
-			width: 564px;
-			max-width: calc(100% - 20px);
-			margin-bottom: 24px;
-		}
-		p:nth-last-child(even) {
-			margin-bottom: 0px;
+		.p {
+			p {
+				width: 564px;
+				max-width: calc(100% - 20px);
+				margin-bottom: 24px;
+			}
+			p:nth-last-child(-n+1) {
+				margin-bottom: 0px;
+			}
 		}
 		.div {
 			color: var(--darkGray);

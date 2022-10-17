@@ -1,1 +1,0 @@
-export { LilScience } from "./LilScience";

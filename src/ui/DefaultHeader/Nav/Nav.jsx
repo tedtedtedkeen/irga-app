@@ -8,9 +8,9 @@ function Nav() {
       className={styles.nav}
     >
       <NavLink to="/">Главная</NavLink>
-      <NavLink to="about">О нас</NavLink>
-      <NavLink to="projects">Проекты</NavLink>
-      <NavLink to="science">Научная деятельность</NavLink>
+      <NavLink to="/about">О нас</NavLink>
+      <NavLink to="/projects">Проекты</NavLink>
+      <NavLink to="/science">Научная деятельность</NavLink>
     </nav>
   );
 }

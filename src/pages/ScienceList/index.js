@@ -1,1 +1,0 @@
-export { Science } from "./Science";
