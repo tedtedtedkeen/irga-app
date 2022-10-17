@@ -2,11 +2,9 @@ import React from "react";
 import styles from "./ProjectsNav.module.scss";
 import { NavLink } from "react-router-dom";
 
-const ProjectsNav = ({
-  main = true
-}) => {
+const ProjectsNav = () => {
   return (
-    <nav className={main ? styles.nav : styles.page}>
+    <nav className={styles.nav}>
       <NavLink to={"/projects"}>
         <span></span>
         <h5>

@@ -1,11 +1,10 @@
 import React from "react";
-import { ProjectsNav } from "../ProjectsHeader/ProjectsNav/ProjectsNav";
+import { ProjectsNav } from "./ProjectsNav";
 import styles from "./ProjectsList.module.scss";
 import { useDatabase } from "../../store/DataProvider";
-import { Project } from "./Project/Project";
+import { Project } from "./Project";
 
 const ProjectsList = ({
-  nav = true,
   main = true
 }) => {
 
@@ -24,7 +23,7 @@ const ProjectsList = ({
               В своей работе архитекторы используют технологии информационного моделирования (BIM)
             </p>
           </div>
-          {nav && <ProjectsNav />}
+          <ProjectsNav />
         </div>
       </div>
       <div className={styles.projects}>

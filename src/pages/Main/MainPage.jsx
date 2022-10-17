@@ -21,7 +21,9 @@ function MainPage() {
 				isOpen={state}
 				onClose={changeState}
 			/>
-      <Header />
+      <Header 
+        onOpen={changeState} 
+      />
       <MainProjectsList />
       {
         text &&

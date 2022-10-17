@@ -4,7 +4,6 @@ import { useParams } from 'react-router-dom';
 import { toggleModal } from "../../hooks/toggleModal";
 import { Modal } from "../../ui/Modal";
 import { ScienceList } from './components/ScienceList/ScienceList';
-import { ScienceHeader } from '../../ui/ScienceHeader';
 import { Header } from '../../ui/DefaultHeader/Header';
 
 const SciencePage = () => {

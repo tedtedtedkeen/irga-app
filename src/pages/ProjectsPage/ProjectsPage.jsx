@@ -21,9 +21,9 @@ function ProjectsPage() {
       <div
 				className={styles.projects}
 			>
-      <ProjectsList 
-        main={false}
-      />
+        <ProjectsList 
+          main={false}
+        />
       </div>
     </>
   );

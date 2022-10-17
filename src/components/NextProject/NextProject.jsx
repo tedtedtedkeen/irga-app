@@ -1,8 +1,7 @@
 import React from 'react';
-import { PrNum } from '../../ui/PrNum/PrNum';
-import styles from "./SubProject.module.scss";
+import styles from "./NextProject.module.scss";
 
-const SubProject = ({
+const NextProject = ({
   id,
   img,
   title
@@ -37,4 +36,4 @@ const SubProject = ({
   );
 };
 
-export { SubProject };
+export { NextProject };
