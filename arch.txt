@@ -46,6 +46,15 @@ make a yandex cards api
 690px -- change title's fz
 
 
+the end 
+
+routes 
+pages 
+footer 
+data
+make a yandex cards api 
+
+
 router 
 
 Outlet - all content in outlet 

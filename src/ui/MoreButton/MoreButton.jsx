@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const MoreButton = ({
   id = "",
-  page
+  page = ""
 }) => {
   return (
     <Link to={`${page}${id}`}>

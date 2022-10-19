@@ -17,22 +17,22 @@ function Header({
   return (
 		<>
 			<header className={pad ? styles.padHeader : styles.header}>
-			<Link to="/">
-        <img 
-          src={irgaLogoX2} 
-          alt="IRGA Logotype" 
-        />
-      </Link>
-			<div>
-				{
-					width < 800
-						? <HiOutlineMenuAlt4 
-							className={styles.burger}
-							onClick={onOpen}
-						/>
-						: <Nav />
-				}
-			</div>
+				<Link to="/">
+      	  <img 
+      	    src={irgaLogoX2} 
+      	    alt="IRGA Logotype" 
+      	  />
+      	</Link>
+				<>
+					{
+						width < 800
+							? <HiOutlineMenuAlt4 
+								className={styles.burger}
+								onClick={onOpen}
+							/>
+							: <Nav />
+					}
+				</>
     	</header>
 		</>
   );

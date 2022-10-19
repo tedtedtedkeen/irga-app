@@ -12,33 +12,31 @@ const ScienceList = () => {
   return (
     <div className={styles.container}>
       <div className={styles.head}>
-        <div>
-          <h2>Научная деятельность</h2>
-        </div>
-        <div className={styles.subHead}>
-          <div>
-            <p className={styles.paragraph}>
-              В своей работе архитекторы используют технологии информационного моделирования (BIM)
-            </p>
-          </div>
+        <h2>Научная деятельность</h2>
+        <div className={styles.miniHead}>
+          <p className={styles.p}>
+            В своей работе архитекторы используют технологии информационного моделирования (BIM)
+          </p>
           <ScienceNav />
         </div>
       </div>
-      {
-        science &&
-        science.map(item => {
-          return item.id % 2 == 0
-            ? <ScienceItem 
-              key={item.id}
-              {...item}
-              big={true}
-            />
-            : <ScienceItem 
-              key={item.id}
-              {...item}
-            />
-        })
-      }
+      <div className={styles.projects}>
+        {
+          science &&
+          science.map(item => {
+            return item.id % 2 == 0
+              ? <ScienceItem 
+                key={item.id}
+                {...item}
+                big={true}
+              />
+              : <ScienceItem 
+                key={item.id}
+                {...item}
+              />
+          })
+        }
+      </div>
     </div>
   )
 }

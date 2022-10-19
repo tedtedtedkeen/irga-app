@@ -1,0 +1,39 @@
+
+
+
+
+.container {
+  .button {
+    display: flex;
+    align-items: center;
+    background-color: inherit;
+    column-gap: 48px;
+    p {
+      font-size: 18px;
+      line-height: 26px;
+      color: red;
+    }
+    div {
+      display: flex;
+      align-items: center;
+      p {
+        font-size: 20px;
+        line-height: 30px;
+        margin-right: 8px;
+        color: black;
+      }
+    }
+  }
+  
+  .arrow {
+    font-size: 32px;
+    transition: all 0.2s ease;
+  }
+  .button:hover {
+    .arrow {
+      margin-left: 16px;
+    }
+  }
+
+}
+

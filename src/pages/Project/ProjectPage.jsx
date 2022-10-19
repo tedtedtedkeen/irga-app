@@ -1,16 +1,35 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { useData } from '../../../hooks/useData';
-import { Layout } from './components/ProjectLayout';
-import { ProjectsHeader } from "../../../ui/ProjectsHeader/Header";
-import { toggleModal } from '../../../hooks/toggleModal';
-import { Modal } from '../../../ui/Modal';
-import { SubProject } from '../../../components/SubProject/SubProject';
+import { toggleModal } from "../../hooks/toggleModal";
+import { Modal } from "../../ui/Modal";
+import { Header } from '../../ui/DefaultHeader/Header';
+import { ProjectLayout } from './components/ProjectLayout';
+import { useDatabase } from '../../store/DataProvider';
+import { useNavigate } from "react-router-dom";
 
 const ProjectPage = () => {
-  const {id} = useParams();
 
+  const {id} = useParams();
   let [state, changeState] = toggleModal(<Modal />);
+  const { useCategory } = useDatabase();
+  const projects = useCategory("projects");
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    window.scrollTo({ top: 0 })
+  }, [id])
+
+  const next = (ide) => {
+    if (ide !== projects.filter(item => item.isMain).length) {
+      projects.map(item => {
+        if (item.ide == ide + 1) {
+          navigate(`/projects/${item.id}`)
+        } 
+      })
+    } else {
+      navigate(`/projects/${3}`);
+    }
+  }
 
   return (
     <div>
@@ -18,34 +37,21 @@ const ProjectPage = () => {
         onClose={changeState}
         isOpen={state}
       />
-      <ProjectsHeader 
-        onOpen={changeState}
+      <Header 
+        onOpen={changeState} 
       />
       {
-        useData(
-          "projects",
-          state => state.map(item => {
-            return item.id == id
-              ? <Layout
-                  key={item.id} 
-                  {...item}
-              />
-              : null
-          })
-        )
-      }
-      {
-        useData(
-          "projects",
-          state => state.map(item => {
-            return item.id == +id + 1
-              ? <SubProject
-                  key={item.id}
-                  {...item}
-              />
-              : null
-          })
-        )
+        projects &&
+        projects.map(item => {
+          return item.id == id
+            ? <ProjectLayout 
+              key={item.id}
+              {...item}
+              next={next}
+              projects={projects}
+            />
+            : null
+        })
       }
     </div>
   );

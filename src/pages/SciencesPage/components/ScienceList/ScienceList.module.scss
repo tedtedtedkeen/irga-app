@@ -1,50 +1,105 @@
 
 .container {
-
 	padding-left: 48px;
   padding-top: 110px;
-
   .head {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin-bottom: 88px;
-
     h2 {
-      padding-right: 186px;
-      width: min-content;
+      height: min-content;
+      white-space: nowrap;
+    }
+    .miniHead {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-left: 400px;
+      column-gap: 100px;
+      row-gap: 48px;
+    }
+    .p {
+      width: 272px;
+      line-height: 145%;
+      color: var(--lightBlack);
+      font-size: 18px;
     }
   }
-
-  .subHead {
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 127px;
-    column-gap: 100px;
-    row-gap: 48px;
-  }
-
-  .paragraph {
-    width: 272px;
-    line-height: 145%;
-    color: var(--lightBlack);
-    font-size: 18px;
-  }
-
   .projects {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     margin-left: 20px;
     row-gap: 120px;
-    column-gap: 24px;
-    align-items: flex-end;
+    column-gap: 128px;
+    // align-items: flex-end;
     margin-bottom: 171px;
   }
 }
 
-.bigImg {
-  width: 700px;
+@media (max-width: 1238px) {
+  
 }
 
-.img {
-  width: 250px;
+@media (max-width: 1000px) {
+  .container {
+    .head {
+      .miniHead {
+        flex-direction: column;
+        margin-left: 350px;
+      }
+    }
+  }
+}
+
+@media (max-width: 880px) {
+	.container {
+		.head {
+			h2 {
+				padding-right: 64px;
+			}
+		}
+
+		.projects {
+			row-gap: 56px;
+			margin-left: 0px;
+		}
+	}
+}
+
+@media (max-width: 724px) {
+  .container {
+    padding-left: 20px;
+    .head {
+      position: relative;
+      h2 {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        font-size: 24px;
+        line-height: 32px;  
+        margin-bottom: 32px;
+      }
+      .miniHead {
+        margin-left: 200px;
+        padding-top: 72px;
+      }
+      .p {
+        width: 182px;
+        font-size: 16px;
+        line-height: 20px;
+      }
+  
+    }
+  }
+}
+
+@media (max-width: 524px) {
+  .container {
+    .head {
+      .miniHead {
+        margin-left: 80px;
+      }
+    }
+  }
 }

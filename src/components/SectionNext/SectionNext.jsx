@@ -1,10 +1,11 @@
 import React from 'react';
-import styles from "./NextProject.module.scss";
+import styles from "./SectionNext.module.scss";
 
-const NextProject = ({
+const SectionNext = ({
   id,
   img,
-  title
+  title,
+  total
 }) => {
   return (
     <div
@@ -19,10 +20,6 @@ const NextProject = ({
           <p>
             Следующий проект
           </p>
-          <PrNum 
-            id={id}
-            green={true}
-          />
         </div>
         <h2>
           { title }
@@ -36,4 +33,4 @@ const NextProject = ({
   );
 };
 
-export { NextProject };
+export { SectionNext };

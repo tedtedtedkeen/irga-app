@@ -1,0 +1,92 @@
+
+
+
+.container {
+  padding-top: 112px;
+  display: flex;
+  flex-direction: column;
+  p {
+    font-size: 18px;
+    line-height: 26px;
+    color: var(--lightBlack);
+    font-weight: 400;
+    width: 564px;
+  }
+  .title {
+    width: 940px;
+    max-width: calc(100% - 20px);
+    align-self: center;
+    margin-bottom: 112px;
+  }
+  .firstImage {
+    width: 100%;
+    max-width: calc(100% - 20px);
+    margin-bottom: 112px;
+  }
+  .firstText {
+    margin-bottom: 24px;
+    align-self: center;
+  }
+  .secondText {
+    margin-bottom: 112px;
+    align-self: center;
+  }
+  .firstBlock {
+    display: flex;
+    align-items: center;
+    column-gap: 96px;
+    margin-bottom: 112px;
+    margin-right: 130px;
+    .secondImage {
+      width: 100%;
+      max-width: calc(100% - 20px);
+    }
+    .thirdText {
+      margin-bottom: 24px;
+    }
+  }
+  .fifthText {
+    margin-left: 52px;
+    margin-bottom: 112px;
+  }
+  .thirdImage { 
+    width: 100%;
+    max-width: calc(100% - 20px);
+    margin-left: auto;
+    margin-bottom: 112px;
+  }
+  .secondBlock {
+    width: 100%;
+    max-width: calc(100% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 130px;
+    margin-bottom: 112px;
+    .sixthText {
+      margin-bottom: 112px;
+      padding-right: 32px;
+    }
+    .fourthImage {
+      align-self: flex-start;
+      width: 100%;
+      max-width: calc(100% - 20px);
+    }
+  }
+  .thirdBlock {
+    width: 100%;
+    max-width: calc(100% - 20px);
+    display: flex;
+    align-items: flex-end;
+    column-gap: 160px;
+    margin-left: 64px;
+    margin-bottom: 112px;
+    .seventhText {
+      margin-bottom: 112px;
+    }
+    .fifthImage {
+      width: 623px;
+      max-width: calc(100% - 20px);
+    }
+  }
+}

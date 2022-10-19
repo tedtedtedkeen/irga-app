@@ -1,18 +1,18 @@
 import React from "react";
 import { MoreButton } from "../../../../ui/MoreButton";
 import styles from "./MainProject.module.scss";
-import { NextButton } from "../../../../ui/NextButton";
+import { NextButton } from "../NextButton";
 
 function MainProject({
 	title, 
 	id, 
 	subtitle, 
 	img, 
-	page, 
 	total,
 	ide,
 	nextSlide = f => f
 }) {
+	console.log(id);
   return (
     <div className={styles.main}>
       <div className={styles.content}>
@@ -33,7 +33,7 @@ function MainProject({
 						</p>
             <MoreButton 
 							id={id} 
-							page={page} 
+							page={"projects/"} 
 						/>
           </div>
         </div>

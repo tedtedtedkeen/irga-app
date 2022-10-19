@@ -10,8 +10,8 @@ module.exports = {
 
     output: {
         path: path.resolve(__dirname, "../build"),
-        filename: "bundle.js",
-        publicPath: "auto"
+        filename: "./bundle.js",
+        publicPath: "/"
     },
 
     plugins: [

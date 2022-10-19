@@ -5,15 +5,11 @@ import styles from "./NextButton.module.scss";
 
 function NextButton({
   text,
-  id,
   total,
   ide,
-  page,
   nextSlide = f => f,
 }) {
   return (
-    // <Link to={`${page}${id}`}>
-    // text ? styles.text : styles.button
       <button 
         className={text ? styles.text : styles.button} 
         onClick={() => nextSlide(ide)}
@@ -32,7 +28,6 @@ function NextButton({
           <HiOutlineArrowNarrowRight className={styles.arrow} />
         </div>
       </button>
-    // </Link>
   );
 }
 

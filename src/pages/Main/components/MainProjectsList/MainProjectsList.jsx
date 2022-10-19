@@ -7,7 +7,6 @@ const MainProjectsList = () => {
   const { useCategory } = useDatabase();
   const projects = useCategory("projects");
   const [current, setCurrent] = useState(1);
-  console.log(current);
 
   const nextSlide = (ide) => {
     if (ide == projects.filter(item => item.isMain).length) {
@@ -15,13 +14,11 @@ const MainProjectsList = () => {
     } else {
       setCurrent(current + 1)
     }
-    console.log(current);
   };
 
   const render = (current) => {
     return projects && 
     projects.map((item) => {
-      console.log(projects.filter(item => item.isMain).length);
       return item.ide == current
         ? <MainProject
             key={item.id}

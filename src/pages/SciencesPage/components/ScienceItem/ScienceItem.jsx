@@ -7,25 +7,12 @@ const ScienceItem = ({
   id, 
   category,
   img,
-  firstText,
-  firstImage,
-  secondText,
-  secondImage,
-  thirdText,
-  thirdImage,
-  fourthText,
-  fourthImage,
-  fifthText,
-  fifthImage,
-  sixthText,
-  seventhText,
-  eighthText,
   big
 }) => {
   return (
-    <div className={styles.container}>
+    <div className={big ? styles.bigContainer : styles.container}>
       <img 
-        className={big ? styles.bigImg : styles.img}
+        className={styles.img}
         src={img}
         alt="science-image" 
       />
@@ -35,7 +22,9 @@ const ScienceItem = ({
       <p className={styles.p}>
         { category }
       </p>
-      <MoreButton />
+      <MoreButton 
+        id={id}
+      />
     </div>
   )
 }

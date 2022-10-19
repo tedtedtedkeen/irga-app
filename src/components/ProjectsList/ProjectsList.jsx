@@ -35,6 +35,7 @@ const ProjectsList = ({
               return <Project
                 key={item.id}
                 {...item}
+                main={true}
               />
             } else {
               return <Project

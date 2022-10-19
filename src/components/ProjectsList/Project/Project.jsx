@@ -8,8 +8,15 @@ const Project = ({
   title,
   img,
   category,
-  big
+  big,
+  main = false
 }) => {
+
+  let page = "";
+
+  if (main) {
+    page = "/projects/"
+  }
   return (
       <section
         className={big ? styles.big : styles.little}
@@ -24,9 +31,9 @@ const Project = ({
         <p className={styles.p}>
           { category }
         </p>
-        <MoreButton 
+        <MoreButton
+          page={page}
           id={id}
-          page={"project"}
         />
       </section>
   );
