@@ -17,9 +17,20 @@ const ProjectLayout = ({
   country,
   client,
   address,
-  projects,
+  main,
   next = f => f
 }) => {
+
+  let data = null;
+
+  main.map(item => {
+    if (ide == main.length) {
+      return data = main[0];
+    } else if (item.ide == ide + 1) {
+      return data = item;
+    }
+  });
+
   return (
     <div
       className={styles.container}
@@ -70,16 +81,27 @@ const ProjectLayout = ({
         </div>
       </div>
       {
-        ide
+        data 
           ? <NextProject 
           ide={ide}
+          total={main.length}
           next={next}
-          total={projects.filter(item => item.ide).length}
+          {...data}
           />
           : null
       }
     </div>
   )
 };
+
+// ide
+// ? <NextProject 
+// ide={ide}
+// next={next}
+// total={main.length}
+// title={title}
+// img={img}
+// />
+// : null
 
 export { ProjectLayout };

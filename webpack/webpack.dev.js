@@ -4,9 +4,10 @@ module.exports = {
   mode: 'development',
   devtool: 'cheap-module-source-map',
   devServer: {
-    hot: true,
+    historyApiFallback: true,
     open: true,
-    historyApiFallback: true, 
+    hot: true,
+    compress: true,
   },
   plugins: [
     new webpack.DefinePlugin({

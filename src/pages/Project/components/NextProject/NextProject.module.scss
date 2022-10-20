@@ -3,37 +3,54 @@
 
 
 .container {
-  .button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--active);
+  padding: 72px;
+  .left {
     display: flex;
-    align-items: center;
-    background-color: inherit;
-    column-gap: 48px;
-    p {
-      font-size: 18px;
-      line-height: 26px;
-      color: red;
-    }
-    div {
+    flex-direction: column;
+    row-gap: 80px;
+    .button {
       display: flex;
       align-items: center;
+      background-color: inherit;
+      column-gap: 48px;
+      width: max-content;
       p {
-        font-size: 20px;
-        line-height: 30px;
-        margin-right: 8px;
-        color: black;
+        font-size: 18px;
+        line-height: 26px;
+      }
+      div {
+        display: flex;
+        align-items: center;
+        p {
+          font-size: 20px;
+          line-height: 30px;
+          margin-right: 8px;
+          color: black;
+        }
       }
     }
-  }
-  
-  .arrow {
-    font-size: 32px;
-    transition: all 0.2s ease;
-  }
-  .button:hover {
     .arrow {
-      margin-left: 16px;
+      font-size: 32px;
+      transition: all 0.2s ease;
+    }
+    .button:hover {
+      .arrow {
+        margin-left: 16px;
+      }
+    }
+    .title {
+      font-size: 45px;
+      line-height: 68px;
+      margin-bottom: 0px;
+      width: 585px;
     }
   }
-
+  .img {
+    width: 638px;
+  }
 }
 

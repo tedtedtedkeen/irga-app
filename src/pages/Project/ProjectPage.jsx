@@ -15,21 +15,23 @@ const ProjectPage = () => {
   const projects = useCategory("projects");
   const navigate = useNavigate();
 
+  let main = null;
+
+  if (projects) {
+    main = projects.filter(item => item.ide);
+  }
+
   useEffect(() => {
     window.scrollTo({ top: 0 })
   }, [id])
 
   const next = (ide) => {
-    if (ide !== projects.filter(item => item.isMain).length) {
-      projects.map(item => {
-        if (item.ide == ide + 1) {
-          navigate(`/projects/${item.id}`)
-        } 
-      })
-    } else {
-      navigate(`/projects/${3}`);
-    }
-  }
+    projects.map(item => {
+      if (item.ide == ide) {
+        navigate(`/projects/${item.id}`)
+      } 
+    })
+  };
 
   return (
     <div>
@@ -43,12 +45,12 @@ const ProjectPage = () => {
       {
         projects &&
         projects.map(item => {
-          return item.id == id
+          return item.id == id 
             ? <ProjectLayout 
               key={item.id}
               {...item}
+              main={main}
               next={next}
-              projects={projects}
             />
             : null
         })

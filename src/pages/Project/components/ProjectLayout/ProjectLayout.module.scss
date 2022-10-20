@@ -18,6 +18,7 @@
     display: flex;
     column-gap: 96px;
     padding-right: 56px;
+    margin-bottom: 144px;
     .scdimg {
       width: 719px;
       max-width: calc(100% - 20px);
@@ -29,5 +30,11 @@
       align-items: center;
       row-gap: 24px;
     }
+  }
+}
+
+@media (max-width: 1254px) {
+  .container {
+    
   }
 }
