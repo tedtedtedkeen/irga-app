@@ -11,19 +11,19 @@ const ProjectsNav = () => {
           Все проекты
         </h5>
       </NavLink>
-      <NavLink to={"/category"}>
+      <NavLink to={"/urban"}>
         <span></span>
         <h5>
           Градостроительство
         </h5>
       </NavLink>
-      <NavLink to={"/arch"}>
+      <NavLink to={"/architecture"}>
         <span></span>
         <h5>
           Архитектура
         </h5>
       </NavLink>
-			<NavLink to={"/space"}>
+			<NavLink to={"/socialspace"}>
         <span></span>
         <h5>
           Общественное пространство

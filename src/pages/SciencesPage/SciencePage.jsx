@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import styles from "./SciencePage.module.scss";
-import { useParams } from 'react-router-dom';
+import { Routes, useParams, Route, Outlet } from 'react-router-dom';
 import { toggleModal } from "../../hooks/toggleModal";
 import { Modal } from "../../ui/Modal";
 import { ScienceList } from './components/ScienceList/ScienceList';

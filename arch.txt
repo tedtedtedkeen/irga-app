@@ -50,8 +50,8 @@ the end
 
 routes 
 pages 
-footer 
-data
+footer - done
+data 
 make a yandex cards api 
 
 

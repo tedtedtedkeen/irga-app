@@ -87,3 +87,24 @@ body {
 		z-index: 0;
 	}
 }
+
+
+.active {
+	position: relative;
+	h5 {
+		position: relative;
+		z-index: 10;
+		color: #000;
+	}
+	span {
+		transition: 0.2s all ease;
+		position: absolute;
+		left: -12px;
+		top: -2px;
+		width: 29px;
+		height: 29px;
+		background-color: var(--active);
+		border-radius: 50%;
+		z-index: 0;
+	}
+}

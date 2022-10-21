@@ -9,7 +9,7 @@ const MainProjectsList = () => {
   const [current, setCurrent] = useState(1);
 
   const nextSlide = (ide) => {
-    if (ide == projects.filter(item => item.isMain).length) {
+    if (ide == projects.filter(item => item.ide).length) {
       setCurrent(1)
     } else {
       setCurrent(current + 1)
@@ -22,7 +22,7 @@ const MainProjectsList = () => {
       return item.ide == current
         ? <MainProject
             key={item.id}
-            total={projects.filter(item => item.isMain).length}
+            total={projects.filter(item => item.ide).length}
             {...item}
             nextSlide={nextSlide}
           />
