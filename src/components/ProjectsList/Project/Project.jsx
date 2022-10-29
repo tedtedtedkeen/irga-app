@@ -9,14 +9,18 @@ const Project = ({
   img,
   category,
   big,
-  main = false
+  main = false,
+  route = ""
 }) => {
 
   let page = "";
 
   if (main) {
-    page = "/projects/"
+    page = "projects";
+  } else {
+    page = route;
   }
+
   return (
       <section
         className={big ? styles.big : styles.little}

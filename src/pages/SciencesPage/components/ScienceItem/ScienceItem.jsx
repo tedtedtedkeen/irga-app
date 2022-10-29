@@ -22,7 +22,8 @@ const ScienceItem = ({
       <p className={styles.p}>
         { category }
       </p>
-      <MoreButton 
+      <MoreButton
+        page={"science"}
         id={id}
       />
     </div>

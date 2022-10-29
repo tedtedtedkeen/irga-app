@@ -30,9 +30,13 @@ function App() {
           <Route path="eighteen" element={<Eighteen />}/>
           <Route path="nineteen" element={<Nineteen />} />
           <Route path="architecture" element={<Architecture />}/> 
+          <Route path="architecture/:id" element={<ProjectPage />}/> 
           <Route path="urban" element={<Urban />}/> 
+          <Route path="urban/:id" element={<ProjectPage />}/> 
           <Route path="socialspace" element={<Socialspace />}/>  
+          <Route path="socialspace/:id" element={<ProjectPage />}/>  
           <Route path="landscape" element={<Landscape />}/> 
+          <Route path="landscape/:id" element={<ProjectPage />}/> 
         </Route>
       </Routes>
     </>

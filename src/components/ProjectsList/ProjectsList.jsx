@@ -5,7 +5,8 @@ import { useDatabase } from "../../store/DataProvider";
 import { Project } from "./Project";
 
 const ProjectsList = ({
-  main = true
+  main = true,
+  route = "",
 }) => {
 
   const { useCategory } = useDatabase();
@@ -36,11 +37,13 @@ const ProjectsList = ({
                 key={item.id}
                 {...item}
                 main={true}
+                route={route}
               />
             } else {
               return <Project
               key={item.id}
               {...item}
+              route={route}
             />
             }
           })

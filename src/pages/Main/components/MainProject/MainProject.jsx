@@ -33,7 +33,7 @@ function MainProject({
 						</p>
             <MoreButton 
 							id={id} 
-							page={"projects/"} 
+							page={"projects"} 
 						/>
           </div>
         </div>

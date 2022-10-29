@@ -23,48 +23,49 @@ const Landscape = ({
 
   return (
     <div>
-    <Modal 
-      onClose={changeState}
-      isOpen={state}
-    />
-    <Header 
-      onOpen={changeState} 
-    />
-    <div className={styles.container}>
-      <div className={styles.head}>
-        <div>
-          <h2>Ландшафтный дизайн</h2>
-        </div>
-        <div className={styles.subHead}>
+      <Modal 
+        onClose={changeState}
+        isOpen={state}
+      />
+      <Header 
+        onOpen={changeState} 
+      />
+      <div className={styles.container}>
+        <div className={styles.head}>
           <div>
-            <p className={styles.paragraph}>
-              В своей работе архитекторы используют технологии информационного моделирования (BIM)
-            </p>
+            <h2>Проекты</h2>
           </div>
-          <ProjectsNav />
+          <div className={styles.subHead}>
+            <div>
+              <p className={styles.paragraph}>
+                В своей работе архитекторы используют технологии информационного моделирования (BIM)
+              </p>
+            </div>
+            <ProjectsNav />
+          </div>
         </div>
-      </div>
-      <div className={styles.projects}>
-        {
-          projects &&
-          projects.map(item => {
-            if (item.category === "Ландшафтный дизайн") {
-              return main 
-                ? <Project
-                    key={item.id}
-                    {...item}
-                    main={true}
-                  />
-                : <Project
-                    key={item.id}
-                    {...item}
-                  />
-            } 
-          })
-        }
+        <div className={styles.projects}>
+          {
+			  		projects &&
+            projects.map(item => {
+              if (item.category === "Ландшафтный дизайн") {
+                return main 
+                  ? <Project
+                      key={item.id}
+                      {...item}
+                      route={"landscape"}
+                    />
+                  : <Project
+                      key={item.id}
+                      {...item}
+                      route={"landscape"}
+                    />
+              } 
+            })
+			  	}
+        </div>
       </div>
     </div>
-  </div>
   )
 };
 

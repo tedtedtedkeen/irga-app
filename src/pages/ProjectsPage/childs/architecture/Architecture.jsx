@@ -52,11 +52,12 @@ const Architecture = ({
                   ? <Project
                       key={item.id}
                       {...item}
-                      main={true}
+                      route={"architecture"}
                     />
                   : <Project
                       key={item.id}
                       {...item}
+                      route={"architecture"}
                     />
               } 
             })

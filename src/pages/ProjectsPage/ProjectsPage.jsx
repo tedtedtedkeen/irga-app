@@ -29,6 +29,7 @@ function ProjectsPage() {
 			>
         <ProjectsList 
           main={false}
+          route={"projects"}
         />
       </div>
     </>
