@@ -15,15 +15,11 @@ const ProjectsList = ({
   return (
     <div className={styles.container}>
       <div className={styles.head}>
-        <div>
-          <h2>Проекты</h2>
-        </div>
-        <div className={styles.subHead}>
-          <div>
-            <p className={styles.paragraph}>
-              В своей работе архитекторы используют технологии информационного моделирования (BIM)
-            </p>
-          </div>
+        <h2>Проекты</h2>
+        <div className={styles.miniHead}>
+          <p className={styles.p}>
+            В своей работе архитекторы используют технологии информационного моделирования (BIM)
+          </p>
           <ProjectsNav />
         </div>
       </div>

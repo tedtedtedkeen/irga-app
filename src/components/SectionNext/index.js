@@ -1,1 +1,0 @@
-export { SectionNext } from "./SectionNext";

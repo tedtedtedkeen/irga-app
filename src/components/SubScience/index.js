@@ -1,1 +1,0 @@
-export { SubScience } from "./SubScience";
