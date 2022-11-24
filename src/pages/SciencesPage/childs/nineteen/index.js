@@ -1,1 +1,0 @@
-export { Nineteen } from "./Nineteen";

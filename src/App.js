@@ -8,12 +8,9 @@ import { MainPage } from "./pages/Main";
 import { SciencePage } from "./pages/SciencesPage/SciencePage";
 import { ScienceItem } from "./pages/ScienceItem/ScienceItem";
 import { ProjectPage } from "./pages/Project/ProjectPage";
-import { Eighteen } from "./pages/SciencesPage/childs/eighteen";
-import { Nineteen } from "./pages/SciencesPage/childs/nineteen";
-import { Architecture } from "./pages/ProjectsPage/childs/architecture";
-import { Urban } from "./pages/ProjectsPage/childs/urban";
-import { Landscape } from "./pages/ProjectsPage/childs/landscape";
-import { Socialspace } from "./pages/ProjectsPage/childs/socialspace";
+import { Social } from "./pages/ProjectsPage/childs/social";
+import { Other } from "./pages/ProjectsPage/childs/other";
+import { Residential } from "./pages/ProjectsPage/childs/residential";
 
 function App() {
   return (
@@ -27,16 +24,12 @@ function App() {
           <Route path="projects/:ide" element={<ProjectPage />} />
           <Route path="science" element={<SciencePage />} />
           <Route path="science/:id" element={<ScienceItem />} />
-          <Route path="eighteen" element={<Eighteen />}/>
-          <Route path="nineteen" element={<Nineteen />} />
-          <Route path="architecture" element={<Architecture />}/> 
-          <Route path="architecture/:id" element={<ProjectPage />}/> 
-          <Route path="urban" element={<Urban />}/> 
-          <Route path="urban/:id" element={<ProjectPage />}/> 
-          <Route path="socialspace" element={<Socialspace />}/>  
-          <Route path="socialspace/:id" element={<ProjectPage />}/>  
-          <Route path="landscape" element={<Landscape />}/> 
-          <Route path="landscape/:id" element={<ProjectPage />}/> 
+          <Route path="social" element={<Social />}/> 
+          <Route path="social/:id" element={<ProjectPage />}/> 
+          <Route path="residential" element={<Residential />}/> 
+          <Route path="residential/:id" element={<ProjectPage />}/> 
+          <Route path="other" element={<Other />}/>  
+          <Route path="other/:id" element={<ProjectPage />}/>  
         </Route>
       </Routes>
     </>

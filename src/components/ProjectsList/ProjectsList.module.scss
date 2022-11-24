@@ -48,6 +48,10 @@
 			}
 		}
 
+    .miniHead {
+      margin-left: 300px;
+    }
+
 		.projects {
 			row-gap: 56px;
 			margin-left: 0px;
@@ -65,13 +69,14 @@
         top: 0px;
         left: 0px;
         font-size: 24px;
-        line-height: 32px;  
-        // margin-bottom: 32px;
       }
     }
 
+    .miniHead {
+      margin-left: 72px;
+    }
+
     .p {
-      margin-left: 140px;
       width: 182px;
       font-size: 16px;
       line-height: 20px;

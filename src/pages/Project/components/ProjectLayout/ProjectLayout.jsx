@@ -54,30 +54,30 @@ const ProjectLayout = ({
           alt="sub-img" 
         />
         <div className={styles.infoList}>
-          <InfoElement 
+          {country && <InfoElement 
             text={"Страна"}
             title={country}
-          />
-          <InfoElement 
+          />}
+          {address && <InfoElement 
             text={"Город"}
             title={address}
-          />
-          <InfoElement 
+          />}
+          {square && <InfoElement 
             text={"Площадь"}
             title={square}
-          />
-          <InfoElement 
+          />}
+          {status && <InfoElement 
             text={"Статус"}
             title={status}
-          />
-          <InfoElement 
+          />}
+          {year && <InfoElement 
             text={"Год"}
             title={year}
-          />
-          <InfoElement 
+          />}
+          {client && <InfoElement 
             text={"Заказчик"}
             title={client}
-          />
+          />}
         </div>
       </div>
       {

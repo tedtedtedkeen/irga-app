@@ -7,7 +7,7 @@ import { ProjectsList } from "../../components/ProjectsList/ProjectsList";
 import { toggleModal } from "../../hooks/toggleModal";
 import { Modal } from "../../ui/Modal";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
-import { MainProjectsList } from "./components/MainProjectsList/MainProjectsList";
+// import { MainProjectsList } from "./components/MainProjectsList/MainProjectsList";
 import { useParams } from 'react-router-dom';
 
 function MainPage() {
@@ -27,10 +27,11 @@ function MainPage() {
 				isOpen={state}
 				onClose={changeState}
 			/>
-      <Header 
+      <Header
+        pad={true}
         onOpen={changeState} 
       />
-      <MainProjectsList />
+      {/* <MainProjectsList /> */}
       {
         text &&
         text.map((item, i) => {

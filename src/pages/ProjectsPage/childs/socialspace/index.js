@@ -1,1 +1,0 @@
-export { Socialspace } from "./Socialspace";

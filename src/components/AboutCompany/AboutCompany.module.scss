@@ -82,8 +82,10 @@
     .content {
       .pb {
         margin-left: 72px;
-        font-size: 16px;
-        line-height: 20px;
+        .p {
+          font-size: 16px;
+          line-height: 20px;
+        }
       }
     }
   }

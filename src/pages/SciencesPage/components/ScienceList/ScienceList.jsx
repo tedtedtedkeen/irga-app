@@ -2,7 +2,6 @@ import React from 'react';
 import styles from "./ScienceList.module.scss";
 import { useDatabase } from '../../../../store/DataProvider';
 import { ScienceItem } from '../ScienceItem/ScienceItem';
-import { ScienceNav } from '../ScienceNav/ScienceNav';
 
 const ScienceList = () => {
 
@@ -17,7 +16,6 @@ const ScienceList = () => {
           <p className={styles.p}>
             В своей работе архитекторы используют технологии информационного моделирования (BIM)
           </p>
-          <ScienceNav />
         </div>
       </div>
       <div className={styles.projects}>

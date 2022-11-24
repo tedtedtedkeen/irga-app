@@ -11,28 +11,22 @@ const ProjectsNav = () => {
           Все проекты
         </h5>
       </NavLink>
-      <NavLink to={"/urban"}>
+      <NavLink to={"/social"}>
         <span></span>
         <h5>
-          Градостроительство
+          Социальные объекты
         </h5>
       </NavLink>
-      <NavLink to={"/architecture"}>
+      <NavLink to={"/residential"}>
         <span></span>
         <h5>
-          Архитектура
+          Жилые здания
         </h5>
       </NavLink>
-			<NavLink to={"/socialspace"}>
+			<NavLink to={"/other"}>
         <span></span>
         <h5>
-          Общественное пространство
-        </h5>
-      </NavLink>
-			<NavLink to={"/landscape"}>
-        <span></span>
-        <h5>
-          Ландшафтный дизайн
+          Прочее
         </h5>
       </NavLink>
     </nav>

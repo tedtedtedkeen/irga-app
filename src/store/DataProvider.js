@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext, createContext } from "react";
+import React, { useState, useEffect, useContext, createContext, useLayoutEffect } from "react";
 import { ref, onValue } from "firebase/database";
 import { useFirebase } from "./firebase";
 
@@ -11,7 +11,7 @@ function DataProvider({ children }) {
 
   const [data, setData] = useState();
 
-	useEffect(() => {
+	useLayoutEffect(() => {
 		onValue(ref(db), (snapshot) => {
 			const data = snapshot.val();
 			setData(Object.values(data));
@@ -20,7 +20,7 @@ function DataProvider({ children }) {
 	
 	const useCategory = (cat) => {
 		const [category, setCategory] = useState();
-		useEffect(() => {
+		useLayoutEffect(() => {
 			onValue(ref(db, cat), (snapshot) => {
 				const data = snapshot.val();
 				setCategory(Object.values(data));

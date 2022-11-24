@@ -33,7 +33,6 @@ function About() {
       {
         pageText &&
         pageText.map(item => {
-          console.log(item);
           return <CompanyStory 
             key={item.id}
             {...item}
