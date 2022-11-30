@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from "./ScienceItem.module.scss";
 import { MoreButton } from '../../../../ui/MoreButton';
+import { Link } from 'react-router-dom';
 
 const ScienceItem = ({
   title,
@@ -11,11 +12,13 @@ const ScienceItem = ({
 }) => {
   return (
     <div className={big ? styles.bigContainer : styles.container}>
-      <img 
-        className={styles.img}
-        src={img}
-        alt="science-image" 
-      />
+      <Link to={`/concepts/${id}`}>
+        <img 
+          className={styles.img}
+          src={img}
+          alt="science-image" 
+        />
+      </Link>
       <h3>
         { title }
       </h3>
@@ -23,7 +26,7 @@ const ScienceItem = ({
         { category }
       </p>
       <MoreButton
-        page={"science"}
+        page={"concepts"}
         id={id}
       />
     </div>

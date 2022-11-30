@@ -7,7 +7,17 @@
 
   img {
     width: 100%;
-    height: auto;
+    height: 400px;
+    object-fit: cover;
+    transition: 0.2s all ease;
+  }
+
+  img:active {
+    opacity: 0.5;
+  }
+
+  img:hover {
+    opacity: 0.7;
   }
 
   h3 {
@@ -49,7 +59,17 @@
 
   img {
     width: 100%;
-    height: auto;
+    height: 335px;
+    object-fit: cover;
+    transition: 0.2s all ease;
+  }
+
+  img:active {
+    opacity: 0.5;
+  }
+
+  img:hover {
+    opacity: 0.7;
   }
 
   h3 {
@@ -61,10 +81,6 @@
     cursor: pointer;
   }
 
-  h3:hover {
-    color: var(--lightBlack);
-  }
-  
   .p {
     margin-bottom: 24px;
     font-size: 16px;

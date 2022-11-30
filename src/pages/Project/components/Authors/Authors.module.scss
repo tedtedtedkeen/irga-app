@@ -1,0 +1,23 @@
+
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 132px;
+  margin-top: 64px;
+  .title {
+    margin-left: 52px;
+  }
+  .sub {
+    margin-left: calc(337px + 52px);
+    font-size: 20px;
+    padding: 16px 0px;
+    color: var(--darkBlack);
+  }
+  p {
+    margin-left: calc(337px + 52px);
+    font-size: 18px;
+    line-height: 26px;
+  }
+}

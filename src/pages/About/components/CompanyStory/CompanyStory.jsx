@@ -9,7 +9,6 @@ function CompanyStory({
   firstTwo,
   secondTitle,
   secondSubtitle,
-  secondImg,
   thirdTitle,
   thirdSubtitle,
 }) {
@@ -43,11 +42,6 @@ function CompanyStory({
         <TitleWithParagraph 
           title={secondTitle}
           subtitle={secondSubtitle}
-        />
-        <img 
-          src={secondImg} 
-          alt="Bristol" 
-          className={styles.img}
         />
         <TitleWithParagraph 
           title={thirdTitle}

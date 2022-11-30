@@ -1,1 +1,0 @@
-export { ScienceLayout } from "./ScienceLayout";

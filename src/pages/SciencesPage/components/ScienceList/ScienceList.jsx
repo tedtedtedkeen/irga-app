@@ -11,7 +11,7 @@ const ScienceList = () => {
   return (
     <div className={styles.container}>
       <div className={styles.head}>
-        <h2>Научная деятельность</h2>
+        <h2>Архитектурно-строительные концепции</h2>
         <div className={styles.miniHead}>
           <p className={styles.p}>
             В своей работе архитекторы используют технологии информационного моделирования (BIM)

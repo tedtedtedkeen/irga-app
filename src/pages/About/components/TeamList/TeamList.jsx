@@ -10,18 +10,21 @@ const TeamList = () => {
   const workers = useCategory("workersList");
 
   return (
-    <div
-      className={styles.list}
-    >
-      {
-        workers && 
-        workers.map(item => {
-          return <TeamMember
-            key={item.id} 
-            {...item}
-          />
-        })
-      }
+    <div>
+      <h2 className={styles.hh2}>Наша команда</h2>
+      <div
+        className={styles.list}
+      >
+        {
+          workers && 
+          workers.map(item => {
+            return <TeamMember
+              key={item.id} 
+              {...item}
+            />
+          })
+        }
+      </div>
     </div>
   )
 };

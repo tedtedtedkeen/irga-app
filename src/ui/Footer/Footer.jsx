@@ -36,20 +36,6 @@ function Footer() {
                 : null
             })
           }
-          <div>
-            <a href="">
-              <img 
-                src={instagram} 
-                alt="instagram-icon" 
-              />
-            </a>
-            <a href="">
-              <img
-                src={facebook}
-                alt="facebook-icon" 
-              />
-            </a>
-          </div>
         </div>
       </div>
 		</footer>

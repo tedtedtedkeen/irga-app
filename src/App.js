@@ -22,8 +22,8 @@ function App() {
           <Route path="projects" element={<ProjectsPage />} />
           <Route path="projects/:id" element={<ProjectPage />} />
           <Route path="projects/:ide" element={<ProjectPage />} />
-          <Route path="science" element={<SciencePage />} />
-          <Route path="science/:id" element={<ScienceItem />} />
+          <Route path="concepts" element={<SciencePage />} />
+          <Route path="concepts/:id" element={<ScienceItem />} />
           <Route path="social" element={<Social />}/> 
           <Route path="social/:id" element={<ProjectPage />}/> 
           <Route path="residential" element={<Residential />}/> 

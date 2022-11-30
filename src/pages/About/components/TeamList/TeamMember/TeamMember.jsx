@@ -3,17 +3,13 @@ import styles from "./TeamMember.module.scss";
 
 const TeamMember = ({ 
   id, 
-  name, 
-  surName, 
+  name,  
   img, 
   position 
 }) => {
   return (
     <div
-      className={id % 3 == 0 
-        ? styles.main
-        : styles.subMain
-      }
+      className={styles.main}
     >
       {
         img
@@ -27,7 +23,7 @@ const TeamMember = ({
           ></div>
       }
       <h4>
-        {name} {surName}
+        {name}
       </h4>
       <p>
         {position}

@@ -1,11 +1,16 @@
 
+.hh2 {
+  padding-left: 52px;
+}
 
 .list {
   display: flex;
+  justify-content: space-between;
+  width: 1000px;
+  margin: auto;
   column-gap: 18px;
   row-gap: 66px;
-  align-items: flex-end;
+  align-items: flex-start;
   flex-wrap: wrap;
-  padding-left: 52px;
   margin-bottom: 112px;
 }

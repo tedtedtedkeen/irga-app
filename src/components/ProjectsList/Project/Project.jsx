@@ -9,6 +9,7 @@ const Project = ({
   img,
   category,
   big,
+  catLink,
   main = false,
   route = ""
 }) => {
@@ -25,16 +26,20 @@ const Project = ({
       <section
         className={big ? styles.big : styles.little}
       >
-        <img
-          src={img} 
-          alt="Project Image" 
-        />
+        <Link to={`/${page}/${id}`}>
+          <img
+            src={img} 
+            alt="Project Image" 
+          />
+        </Link>
         <h3>
           { title }
         </h3>
-        <p className={styles.p}>
-          { category }
-        </p>
+        <Link to={`/${catLink}`}>
+          <p className={styles.p}>
+            { category }
+          </p>
+        </Link>
         <MoreButton
           page={page}
           id={id}

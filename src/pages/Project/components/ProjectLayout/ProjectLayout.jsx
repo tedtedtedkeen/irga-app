@@ -1,5 +1,6 @@
 import React from 'react';
 import { TitleWithParagraph } from '../../../../ui/TitleWithParagraph';
+import { Authors } from '../Authors';
 import { InfoElement } from '../InfoElement/InfoElement';
 import { NextProject } from '../NextProject';
 import styles from "./ProjectLayout.module.scss";
@@ -10,6 +11,7 @@ const ProjectLayout = ({
   title,
   category,
   img,
+  type,
   year,
   status,
   square,
@@ -17,19 +19,23 @@ const ProjectLayout = ({
   country,
   client,
   address,
+  secondImage,
+  size,
+  authors,
+  architectors,
   main,
   next = f => f
 }) => {
 
-  let data = null;
+  // let data = null;
 
-  main.map(item => {
-    if (ide == main.length) {
-      return data = main[0];
-    } else if (item.ide == ide + 1) {
-      return data = item;
-    }
-  });
+  // main.map(item => {
+  //   if (ide == main.length) {
+  //     return data = main[0];
+  //   } else if (item.ide == ide + 1) {
+  //     return data = item;
+  //   }
+  // });
 
   return (
     <div
@@ -43,20 +49,37 @@ const ProjectLayout = ({
         src={img}
         alt="main-img" 
       />
-      <TitleWithParagraph 
-        title={"Идея проекта"}
-        subtitle={idea}
-      />
+      <div>
+        {idea && <TitleWithParagraph 
+          title={id >= 50 ? "Идея концепции" : "Идея проекта"}
+          subtitle={idea}
+        />}
+        {authors 
+          ? <Authors
+            authors={authors}
+            architectors={architectors}
+          />
+          : null
+        }
+      </div>
       <div className={styles.block}>
         <img 
           className={styles.scdimg}
-          src={img}
+          src={secondImage ? secondImage : img}
           alt="sub-img" 
         />
         <div className={styles.infoList}>
+          {type && <InfoElement 
+            text={"Тип застройки"}
+            title={type}
+          />}
           {country && <InfoElement 
             text={"Страна"}
             title={country}
+          />}
+          {size && <InfoElement 
+            text={"Вместимость"}
+            title={size}
           />}
           {address && <InfoElement 
             text={"Город"}
@@ -80,7 +103,7 @@ const ProjectLayout = ({
           />}
         </div>
       </div>
-      {
+      {/* {
         data 
           ? <NextProject 
           ide={ide}
@@ -89,7 +112,7 @@ const ProjectLayout = ({
           {...data}
           />
           : null
-      }
+      } */}
     </div>
   )
 };

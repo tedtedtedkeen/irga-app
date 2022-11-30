@@ -26,7 +26,7 @@ const ProjectsList = ({
       <div className={styles.projects}>
         {
 					projects &&
-          projects.map(item => {
+          projects.sort((a, b) => a.id - b.id).map(item => {
             if (main) {
               if (item.id > 6) return null;
               return <Project

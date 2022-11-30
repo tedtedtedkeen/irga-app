@@ -10,7 +10,7 @@ function Nav() {
       <NavLink to="/">Главная</NavLink>
       <NavLink to="/about">О нас</NavLink>
       <NavLink to="/projects">Проекты</NavLink>
-      <NavLink to="/science">Архитектурно-строительные концепции</NavLink>
+      <NavLink to="/concepts">Архитектурно-строительные концепции</NavLink>
     </nav>
   );
 }
