@@ -9,7 +9,7 @@ const toggleModal = (elem) => {
     state,
     () => {
       setState(!state);
-      state ? enableBodyScroll(elem) : disableScrollLock(elem);
+      state == true ? enableBodyScroll(elem) : disableScrollLock(elem);
     }
   ]
 };

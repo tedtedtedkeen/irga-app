@@ -5,14 +5,17 @@ import { toggleModal } from "../../hooks/toggleModal";
 import { Modal } from "../../ui/Modal";
 import { ScienceList } from './components/ScienceList/ScienceList';
 import { Header } from '../../ui/DefaultHeader/Header';
+const bodyScrollLock = require("body-scroll-lock");
 
 const SciencePage = () => {
 
+  const clear = bodyScrollLock.clearAllBodyScrollLocks;
   const {id} = useParams();
   let [state, changeState] = toggleModal(<Modal />);
   
   useEffect(() => {
-    window.scrollTo({ top: 0 })
+    window.scrollTo({ top: 0 });
+    clear(SciencePage);
   }, [id]);
   
   return (

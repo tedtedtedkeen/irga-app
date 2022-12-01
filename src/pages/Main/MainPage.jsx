@@ -7,6 +7,7 @@ import { ProjectsList } from "../../components/ProjectsList/ProjectsList";
 import { toggleModal } from "../../hooks/toggleModal";
 import { Modal } from "../../ui/Modal";
 import { useParams } from 'react-router-dom';
+const bodyScrollLock = require("body-scroll-lock");
 
 function MainPage() {
 
@@ -14,9 +15,11 @@ function MainPage() {
   const { useCategory } = useDatabase();
   const text = useCategory("aboutUsText");
   let [state, changeState] = toggleModal(<Modal />);
+  const clear = bodyScrollLock.clearAllBodyScrollLocks;
 
   useEffect(() => {
-    window.scrollTo({ top: 0 })
+    window.scrollTo({ top: 0 });
+    clear(MainPage);
   }, [id]);
 
   return (
