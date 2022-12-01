@@ -23,6 +23,12 @@ const ProjectsNav = () => {
           Жилые здания
         </h5>
       </NavLink>
+      <NavLink to={"/beauty"}>
+        <span></span>
+        <h5>
+          Благоустройство
+        </h5>
+      </NavLink>
 			<NavLink to={"/other"}>
         <span></span>
         <h5>

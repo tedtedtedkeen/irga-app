@@ -1,14 +1,14 @@
 import React, { useEffect } from 'react';
 import { ProjectsNav } from "../../../../components/ProjectsList/ProjectsNav";
-import styles from "./Other.module.scss";
+import styles from "./Beauty.module.scss";
 import { useDatabase } from "../../../../store/DataProvider";
 import { Project } from "../../../../components/ProjectsList/Project";
 import { Modal } from "../../../../ui/Modal";
 import { toggleModal } from "../../../../hooks/toggleModal";
 import { Header } from '../../../../ui/DefaultHeader/Header';
 
-const Other = ({
-  main = false
+const Beauty = ({
+  mail = false,
 }) => {
 
   const { useCategory } = useDatabase();
@@ -31,7 +31,7 @@ const Other = ({
       />
       <div className={styles.container}>
         <div className={styles.head}>
-          <h2>Прочее</h2>
+          <h2>Благоустройство</h2>
           <div className={styles.miniHead}>
             <p className={styles.p}>
               В своей работе архитекторы используют технологии информационного моделирования (BIM)
@@ -42,12 +42,12 @@ const Other = ({
         <div className={styles.projects}>
           {
 			  		projects &&
-            projects.map(item => {
-              if (item.category === "Прочее") {
+            projects.sort((a, b) => a.id - b.id).map(item => {
+              if (item.category === "Благоустройство") {
                 return <Project
                   key={item.id}
                   {...item}
-                  route={"other"}
+                  route={"beauty"}
                 />
               } 
             })
@@ -55,7 +55,7 @@ const Other = ({
         </div>
       </div>
     </div>
-  )
+  );
 };
 
-export { Other };
+export { Beauty };

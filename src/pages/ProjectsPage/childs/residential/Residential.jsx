@@ -31,7 +31,7 @@ const Residential = ({
       />
       <div className={styles.container}>
         <div className={styles.head}>
-          <h2>Проекты</h2>
+          <h2>Жилые здания</h2>
           <div className={styles.miniHead}>
             <p className={styles.p}>
               В своей работе архитекторы используют технологии информационного моделирования (BIM)

@@ -11,6 +11,7 @@ import { ProjectPage } from "./pages/Project/ProjectPage";
 import { Social } from "./pages/ProjectsPage/childs/social";
 import { Other } from "./pages/ProjectsPage/childs/other";
 import { Residential } from "./pages/ProjectsPage/childs/residential";
+import { Beauty } from "./pages/ProjectsPage/childs/beauty";
 
 function App() {
   return (
@@ -27,7 +28,9 @@ function App() {
           <Route path="social" element={<Social />}/> 
           <Route path="social/:id" element={<ProjectPage />}/> 
           <Route path="residential" element={<Residential />}/> 
-          <Route path="residential/:id" element={<ProjectPage />}/> 
+          <Route path="residential/:id" element={<ProjectPage />}/>
+          <Route path="beauty" element={<Beauty />} /> 
+          <Route path="beauty/:id" element={<ProjectPage />} /> 
           <Route path="other" element={<Other />}/>  
           <Route path="other/:id" element={<ProjectPage />}/>  
         </Route>
