@@ -52,6 +52,12 @@ h2 {
   font-family: "Inter", sans-serif;
 }
 
+@media (max-width: 724px) {
+  h2 {
+    margin-bottom: 40px;
+  }
+}
+
 :root {
   --darkBlack: #000;
   --lightBlack: #393939;

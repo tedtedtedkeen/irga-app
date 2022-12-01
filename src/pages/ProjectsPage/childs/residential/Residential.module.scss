@@ -1,13 +1,12 @@
 .container {
 
-  padding-top: 110px;
 	padding-left: 48px;
-  animation: show 0.2s;
 
   .head {
     display: flex;
     flex-direction: column;
     margin-bottom: 88px;
+    margin-top: 48px;
 
     h2 {
       height: min-content;
@@ -37,7 +36,7 @@
     margin-left: 20px;
     row-gap: 120px;
     column-gap: 24px;
-    align-items: flex-end;
+    align-items: flex-start;
     margin-bottom: 122px;
   }
 }
@@ -49,6 +48,10 @@
 				padding-right: 64px;
 			}
 		}
+
+    .miniHead {
+      margin-left: 300px;
+    }
 
 		.projects {
 			row-gap: 56px;
@@ -67,12 +70,14 @@
         top: 0px;
         left: 0px;
         font-size: 24px;
-        line-height: 32px;  
       }
     }
 
+    .miniHead {
+      margin-left: 72px;
+    }
+
     .p {
-      margin-left: 140px;
       width: 182px;
       font-size: 16px;
       line-height: 20px;
@@ -82,7 +87,6 @@
       padding-top: 72px;
     }
   }
-
 }
 
 @keyframes show {

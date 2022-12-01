@@ -4,16 +4,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  // padding-left: 24px;
   width: 280px;
-
   .image {
     width: 256px;
     height: 256px;
     border-radius: 50%;
     object-fit: cover;
   }
-
   h4 {
     padding-top: 20px;
     margin-bottom: 8px;
@@ -22,7 +19,6 @@
     color: var(--headText);
     font-weight: 400;
   }
-
   p {
     font-size: 16px;
     line-height: 145%;
@@ -30,7 +26,6 @@
     font-weight: 400;
     text-align: center;
   }
-
   .noImage {
     width: 256px;
     height: 256px;
@@ -43,13 +38,11 @@
   .main {
     padding-left: 0px;
   }
-
   .subMain:nth-child(even) {
     padding-top: 16px;
     padding-left: 24px;
     margin-right: 20px;
   }
-
   .subMain:nth-child(odd) {
     margin-bottom: 16px;
   }
@@ -70,7 +63,6 @@
       height: 335px;
     }
   }
-
   .subMain {
     img {
       width: 347px;
@@ -81,13 +73,11 @@
       height: 335px;
     }
   }
-
   .subMain:nth-child(even) {
     padding-top: 0px;
     padding-left: 0px;
     margin-right: 0px;
   }
-
   .subMain:nth-child(odd) {
     margin-bottom: 0px;
   }

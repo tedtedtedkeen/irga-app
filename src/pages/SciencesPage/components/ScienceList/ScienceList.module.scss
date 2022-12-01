@@ -8,7 +8,6 @@
     margin-bottom: 88px;
     h2 {
       height: min-content;
-      white-space: nowrap;
     }
     .miniHead {
       display: flex;
@@ -70,6 +69,7 @@
 @media (max-width: 724px) {
   .container {
     padding-left: 20px;
+    padding-top: 48px;
     .head {
       position: relative;
       h2 {
@@ -82,7 +82,7 @@
       }
       .miniHead {
         margin-left: 200px;
-        padding-top: 72px;
+        padding-top: 120px;
       }
       .p {
         width: 182px;

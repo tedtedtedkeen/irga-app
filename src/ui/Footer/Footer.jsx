@@ -3,8 +3,6 @@ import styles from "./Footer.module.scss";
 import { Nav } from "../DefaultHeader/Nav";
 import { useDatabase } from "../../store/DataProvider";
 import irga from "../../../public/images/irga-logo-x2.png";
-import instagram from "../../../public/images/instagram.png";
-import facebook from "../../../public/images/facebook.png";
 
 function Footer() {
 

@@ -8,7 +8,7 @@ const ModalNav = () => {
       <Link to="/">Главная</Link>
       <Link to="/about">О нас</Link>
       <Link to="/projects">Проекты</Link>
-      <Link to="/science">Научная деятельность</Link>
+      <Link to="/concepts">Концепции</Link>
     </nav>
   );
 };

@@ -11,6 +11,7 @@ const Authors = (
       <h2 className={styles.title}>
         Авторы
       </h2>
+      <div className={styles.authors}>
       {authors.authors && <h4 className={styles.sub}>
         Авторский состав:
       </h4>}
@@ -38,6 +39,7 @@ const Authors = (
           })
           : null
       }
+      </div>
     </div>
   );
 };

@@ -10,10 +10,12 @@ const Partners = () => {
       <h2>
         Наши партнеры
       </h2>
-      <img 
-        src={image}
-        alt="Partners"
-      />
+      <div className={styles.cnt}>
+        <img 
+          src={image}
+          alt="Partners"
+        />
+      </div>
     </div>
   )
 }

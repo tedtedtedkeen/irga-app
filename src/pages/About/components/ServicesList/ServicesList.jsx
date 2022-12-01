@@ -10,7 +10,7 @@ function ServicesList() {
 
   return (
     <div className={styles.mainList}>
-      <h2>Наши услуги</h2>
+      <h2 className={styles.h2}>Услуги</h2>
       <div className={styles.list}>
         {
 					services &&

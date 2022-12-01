@@ -28,7 +28,7 @@ function CompanyStory({
         })
       }
       <div className={styles.storyContainer}>
-        <div className={styles.unknownBlock}>
+        {/* <div className={styles.unknownBlock}>
           <div className={styles.p}>
             <p>
               { firstOne }
@@ -38,7 +38,7 @@ function CompanyStory({
             </p>
           </div>
           <div className={styles.div} >sdf</div>
-        </div>
+        </div> */}
         <TitleWithParagraph 
           title={secondTitle}
           subtitle={secondSubtitle}

@@ -1,1 +1,0 @@
-export { MainProjectsList } from "./MainProjectsList";

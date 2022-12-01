@@ -1,1 +1,0 @@
-export { MainProject } from "./MainProject";
