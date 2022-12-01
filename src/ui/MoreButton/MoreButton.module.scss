@@ -4,9 +4,10 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
-  p {
+  .text {
     font-size: 18px;
     color: var(--bodyText);
+    -webkit-text-stroke-color: var(--bodyText);
     padding-right: 10px;
   }
   .strelka {
