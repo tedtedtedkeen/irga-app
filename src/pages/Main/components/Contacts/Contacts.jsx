@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Contacts.module.scss";
 import { useDatabase } from "../../../../store/DataProvider";
 import img from "../../../../../public/images/contacts.png";
-import morocco from "../../../../../public/images/morocco.png";
+import map from "../../../../../public/images/map.png";
 
 function Contacts() {
 
@@ -31,7 +31,7 @@ function Contacts() {
         <div className={styles.square}>
           <img
             className={styles.img}
-            src={morocco} 
+            src={map} 
             alt="image" 
           />
         </div>
