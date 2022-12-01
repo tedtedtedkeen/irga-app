@@ -12,7 +12,7 @@ const bodyScrollLock = require("body-scroll-lock");
 
 function About() {
 
-  const clear = bodyScrollLock.clearAllBodyScrollLocks;
+  const clear = bodyScrollLock.enableBodyScroll;
   const {id} = useParams();
   const { useCategory } = useDatabase();
   const pageText = useCategory("aboutUsPageText");

@@ -15,7 +15,7 @@ function MainPage() {
   const { useCategory } = useDatabase();
   const text = useCategory("aboutUsText");
   let [state, changeState] = toggleModal(<Modal />);
-  const clear = bodyScrollLock.clearAllBodyScrollLocks;
+  const clear = bodyScrollLock.enableBodyScroll;
 
   useEffect(() => {
     window.scrollTo({ top: 0 });

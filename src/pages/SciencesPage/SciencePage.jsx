@@ -9,7 +9,7 @@ const bodyScrollLock = require("body-scroll-lock");
 
 const SciencePage = () => {
 
-  const clear = bodyScrollLock.clearAllBodyScrollLocks;
+  const clear = bodyScrollLock.enableBodyScroll;
   const {id} = useParams();
   let [state, changeState] = toggleModal(<Modal />);
   
